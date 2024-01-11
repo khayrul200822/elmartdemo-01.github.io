@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+:root {
+    --main-color: #ff0029;
+    --sub-color: #fdd400;
+    --third-color: black;
+}
+
+/*top header style*/
+header {
+    background: url("/image/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.top-haeder {
+    padding: 10px 0px;
+    background: linear-gradient(180deg, black 10%, transparent);
+}
+
+.top-header-left .currency a,
+.top-header-left .language a {
+    outline: none;
+    background: transparent;
+    color: var(--sub-color);
+    border: none;
+    font-size: 13px;
+}
+
+.top-header-left .currency .option-menu ,.language .option-menu {
+    background-color: var(--sub-color);
+    width: 100%;
+    clip-path: polygon(100% 100%, 0 100%, 0 10%, 44% 10%, 50% 0, 56% 10%, 100% 10%);
+    padding-top: 11px;
+    transform: translate(0px, 25px);
+    opacity: 0;
+    display: none;
+}
+
+.top-header-left .currency .option-menu li a,.language .option-menu li a {
+    color: black;
+    font-size: 13px;
+}
+
+.top-header-left .currency .option-menu li, .language .option-menu li {
+    background-color: var(--sub-color);
+    text-align: center;
+    padding: 5px 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.top-header-left .currency .option-menu li:hover , .language .option-menu li:hover {
+    background-color: black;
+    transition: .3s;
+}
+
+.top-header-left .currency .option-menu li:hover a , .language .option-menu li:hover a {
+    transition: .3s;
+    color: var(--sub-color);
+
+}
+
+.top-header-left .currency .option-menu li a, .language .option-menu li a {
+    color: black;
+}
+
+.top-header-left .currency>a, .language > a {
+    font-size: 13px;
+    display: flex;
+    color: var(--sub-color);
+    width: 100px;
+    justify-content: space-between;
+}
+.language > a{
+    width: 80px;
+}
+.top-header-left .currency>a span:nth-child(2) , .language >a span:nth-child(2) {
+    display: block;
+    margin-top: 2px;
+}
+
+.top-header-left .currency , .top-header-left .language{
+    position: relative;
+}
+
+.top-header-left .currency:hover .option-menu , .language:hover .option-menu {
+    animation: fade-up .5s ease-in-out forwards alternate;
+    display: block;
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translate(0px, 25px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.top-header-left .currency .option, .language .option {
+    width: 150px;
+    position: absolute;
+}
+.top-header-right ul.user_option li a {
+    color: var(--sub-color);
+    font-size: 14px;
+    transition: .3s;
+}
+
+.top-header-right ul.user_option li a:hover {
+    color: var(--main-color);
+    transition: .3s;
+}
+/*header style*/
+.main-header .main-header-wrapper .logo a h3 {
+    font-size: 45px;
+    color: var(--main-color);
+}
+
+@media only screen and (max-width: 668px) {
+    .top-header-wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
