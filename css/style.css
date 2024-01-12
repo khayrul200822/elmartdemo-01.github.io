@@ -9,7 +9,6 @@
 a {
     text-decoration: none !important;
 }
-
 :root {
     --main-color: #ff0029;
     --sub-color: #fdd400;
@@ -23,13 +22,11 @@ header {
     background-size: cover;
     background-position: center center;
 }
-
 .top-haeder {
     padding: 10px 0px;
     background: linear-gradient(180deg, black 10%, transparent);
     border-bottom: 1px solid #313131;
 }
-
 .top-header-left .currency a,
 .top-header-left .language a {
     outline: none;
