@@ -352,12 +352,16 @@ div#offcanvasRight {
     color: var(--sub-color);
 }
 
-.cart_info h3 {
+.cart_info h3 a {
     color: var(--main-color);
     font-size: 22px;
     margin-bottom: 5px;
+    transition: .3s;
 }
-
+.cart_info h3 a:hover {
+    color: var(--sub-color);
+    transition: .3s;
+}
 .cart_info .cart_product_price {
     font-size: 20px;
     font-weight: 600;
