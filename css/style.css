@@ -18,7 +18,7 @@ a {
 
 /*top header style*/
 header {
-    background: url("/image/header-bg.jpg");
+    background: url("../image/header-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
