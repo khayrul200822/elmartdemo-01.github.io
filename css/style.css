@@ -323,6 +323,7 @@ ul#desktop_menu {
     gap: 20px;
     color: white;
     font-size: 14px;
+    align-items: center;
 }
 
 .nav-link {
@@ -410,10 +411,10 @@ div#offcanvasRight {
     margin-left: 5px;
 }
 
-.offcanvas-header button {
-    background: var(--sub-color);
+.offcanvas-header > button {
+    background: var(--sub-color) !important;
     opacity: 1;
-    color: var(--main-color);
+    color: var(--main-color) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,10 +424,10 @@ div#offcanvasRight {
     transition: .3s;
 }
 
-.offcanvas-header button:hover {
+.offcanvas-header > button:hover {
     transition: .3s;
-    background: var(--main-color);
-    color: var(--sub-color);
+    background: var(--main-color) !important;
+    color: var(--sub-color) !important;
     opacity: 1;
 }
 .cart_view {
@@ -477,7 +478,7 @@ div#offcanvasRight {
     color: var(--sub-color);
     transition: .3s;
 }
-ul#desktop_menu li button {
+ul#desktop_menu li > button {
     height: 45px;
     border: none;
     outline: none;
