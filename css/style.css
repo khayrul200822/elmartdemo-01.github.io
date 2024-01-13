@@ -369,7 +369,7 @@ div#offcanvasRight {
 }
 
 .cart_info .cart_button span {
-    font-size: 20px;
+    font-size: 12px;
     width: 25px;
     height: 25px;
     border-radius: 100%;
@@ -493,6 +493,104 @@ ul#desktop_menu li > button {
     border: 1px solid var(--sub-color);
     border-radius: 3px;
 }
+ul#desktop_menu li > button:hover {
+    background: var(--sub-color);
+    color: var(--main-color);
+    transition: .3s;
+}
+
+/*hero section*/
+
+.single_hero_slider .slider_title h2{
+    font-size: 50px;
+    color: black;
+    font-weight: 600;
+}
+.single_hero_slider .slider_info p{
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: black;
+}
+.single_hero_slider .slider_button a{
+    font-size: 18px;
+    background-color: var(--main-color);
+    color: var(--sub-color);
+    padding: 12px 35px;
+    border-radius: 50px;
+    transition: .3s;
+}
+.slider_content .slider_button {
+    margin-top: 37px;
+    display: flex;
+}
+
+.single_hero_slider .slider_button a:hover {
+    background-color: var(--third-color);
+}
+
+.hero_section_wrapper .single_hero_slider {
+    padding: 15px 50px;
+}
+
+section#hero_section {
+    background: var(--sub-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+}
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background: var(--main-color)!important;
+}
+.cart_product .single_product {
+    position: relative;
+}
+
+.single_product .product_delete {
+    background: var(--main-color);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.single_product .product_delete:hover {
+    outline: 1px solid var(--sub-color);
+    transition: .3s;
+}
+.category .cateogry_img {
+    width: 100px;
+    height: 100px;
+    background: var(--main-color);
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.category .cateogry_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.category h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
 
 
 /*responsive codes*/

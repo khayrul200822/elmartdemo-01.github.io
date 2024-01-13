@@ -97,6 +97,7 @@ ul>li .sub-menu.mega-menu-column-4 {
 	padding: 40px 15px;
 	padding-bottom: 20px;
 	background: var(--sub-color);
+	box-shadow: 1px 1px 20px 1px #00000070;
 }
 
 ul>li .sub-menu.mega-menu-column-4>.list-item {
@@ -117,7 +118,7 @@ ul>li .sub-menu.mega-menu-column-4>.list-item img {
 	margin-top: 10px;
 }
 ul>li .sub-menu.mega-menu-column-4>.list-item h4 {
-    font-size: 15px;
+    font-size: 19px;
     color: black;
 }
 

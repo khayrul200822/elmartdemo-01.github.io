@@ -155,7 +155,7 @@
                                     </ul>
                                 </div>
                                 <div class="list-item">
-                                    <h4 class="title">WOOCOMMERCE</h4>
+                                    <h4 class="title">Food item 4</h4>
                                     <ul class="ps-0 mt-3">
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
@@ -166,7 +166,7 @@
                                     </ul>
                                 </div>
                                 <div class="list-item">
-                                    <h4 class="title">Food item 4</h4>
+                                    <h4 class="title">Food item 5</h4>
                                     <ul class="ps-0 mt-3">
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                         <li><a href="#">Product List</a></li>
@@ -190,6 +190,7 @@
                                 <div class="offcanvas-body">
                                     <div class="cart_product d-flex flex-column">
                                         <div class="single_product d-flex mb-4">
+                                            <div class="product_delete"><i class="fa-solid fa-x"></i></div>
                                             <div class="cart_img">
                                                 <img class="img-fluid " src="image/cart01.png" alt="cart image">
                                             </div>
@@ -206,14 +207,15 @@
                                                 <h3><a href="#">Indian Tuna Steak</a></h3>
                                                 <div class="cart_product_price">$15</div>
                                                 <div class="cart_button d-flex align-items-center ">
-                                                    <span>-</span>
+                                                    <span><i class="fa-solid fa-minus"></i></span>
                                                     <input type="number" name="cart_value" class="cart_value" min="1"
                                                         value="1">
-                                                    <span>+</span>
+                                                    <span><i class="fa-solid fa-plus"></i></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="single_product d-flex mb-4">
+                                            <div class="product_delete"><i class="fa-solid fa-x"></i></div>
                                             <div class="cart_img">
                                                 <img class="img-fluid " src="image/cart02.png" alt="cart image">
                                             </div>
@@ -230,14 +232,15 @@
                                                 <h3><a href="#">Italian Sandwich Food</a></h3>
                                                 <div class="cart_product_price">$15</div>
                                                 <div class="cart_button d-flex align-items-center ">
-                                                    <span>-</span>
+                                                    <span><i class="fa-solid fa-minus"></i></span>
                                                     <input type="number" name="cart_value" class="cart_value" min="1"
                                                         value="1">
-                                                    <span>+</span>
+                                                    <span><i class="fa-solid fa-plus"></i></span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="single_product d-flex ">
+                                        <div class="single_product d-flex">
+                                            <div class="product_delete"><i class="fa-solid fa-x"></i></div>
                                             <div class="cart_img">
                                                 <img class="img-fluid " src="image/cart03.png" alt="cart image">
                                             </div>
@@ -254,10 +257,10 @@
                                                 <h3><a href="#">Chinies Burger Food</a></h3>
                                                 <div class="cart_product_price">$15</div>
                                                 <div class="cart_button d-flex align-items-center ">
-                                                    <span>-</span>
+                                                    <span class="increase"><i class="fa-solid fa-minus"></i></span>
                                                     <input type="number" name="cart_value" class="cart_value" min="1"
                                                         value="1">
-                                                    <span>+</span>
+                                                    <span class="decrease"><i class="fa-solid fa-plus"></i></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,9 +268,11 @@
                                     <div class="cart_view">
                                         <div class="cart_count d-flex justify-content-between  align-items-center ">
                                             <h3>Subtotal</h3>
-                                            <div class="cart_total"><span class="currency_type">$</span><span class="amount">100.00</span></div>
+                                            <div class="cart_total"><span class="currency_type">$</span><span
+                                                    class="amount">100.00</span></div>
                                         </div>
-                                        <div class="cart_view_button d-flex align-items-center justify-content-between ">
+                                        <div
+                                            class="cart_view_button d-flex align-items-center justify-content-between ">
                                             <a href="#">View Cart</a>
                                             <a href="#">Checkout</a>
                                         </div>
@@ -281,6 +286,317 @@
         </div>
     </header>
     <main>
+        <section id="hero_section">
+            <div class="container-fluid container-xl">
+                <div class="hero_section_wrapper">
+                    <!-- Swiper -->
+
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Chinies Evening Love Pizza</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/hero_img01.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Italian Evening Testy Food</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/hero_img02.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Indian Evening Testy Food</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/img-03.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Russian Cultural Testy Food</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/img-04.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Deshi Evening Testy Food</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/img-02.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>American Evening Testy Pizza</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/img-01.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Healthy Dry Foods </h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/img-01.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Cool Drinks Items For Everyone </h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <div class="slider_img">
+                                                <img class="img-fluid " src="image/img-07.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/category01.png" alt="category image">
+                                    </div>
+                                    <h3>Chines Foods</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/category02.png" alt="category image">
+                                    </div>
+                                    <h3>Italian Foods</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/category03.png" alt="category image">
+                                    </div>
+                                    <h3>Indian Foods</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/img-01.png" alt="category image">
+                                    </div>
+                                    <h3>Russian Foods</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/img-02.png" alt="category image">
+                                    </div>
+                                    <h3>Deshi Foods</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/img-03.png" alt="category image">
+                                    </div>
+                                    <h3>American Foods</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/img-04.png" alt="category image">
+                                    </div>
+                                    <h3>Dry Foods</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                    </div>
+                                    <h3>Cool Drinks</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                             <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/category03.png" alt="category image">
+                                    </div>
+                                    <h3>Indian Foods</h3>
+                                </div>
+                            </div> -->
+
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- script -->
     <script src="js/all.min.js"></script>
