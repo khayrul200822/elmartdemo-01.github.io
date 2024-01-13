@@ -16,11 +16,25 @@ language_option.forEach(ln_item => {
 })
 
   var swiper = new Swiper(".mySwiper", {
-    loop: true,
+    // loop: true,
     spaceBetween: 10,
-    slidesPerView: 5,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    }
   });
   var swiper2 = new Swiper(".mySwiper2", {
     // loop: true,
@@ -36,4 +50,5 @@ language_option.forEach(ln_item => {
     thumbs: {
       swiper: swiper,
     },
+  
   });

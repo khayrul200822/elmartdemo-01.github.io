@@ -534,10 +534,6 @@ ul#desktop_menu li > button:hover {
 
 section#hero_section {
     background: var(--sub-color);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -546,8 +542,8 @@ section#hero_section {
     color: black;
 }
 .swiper-pagination-bullet {
-    width: 15px !important;
-    height: 15px !important;
+    width: 10px !important;
+    height: 10px !important;
     background: var(--main-color)!important;
 }
 .cart_product .single_product {
@@ -573,8 +569,8 @@ section#hero_section {
     transition: .3s;
 }
 .category .cateogry_img {
-    width: 100px;
-    height: 100px;
+    width: 45px;
+    height: 45px;
     background: var(--main-color);
     border-radius: 100%;
     overflow: hidden;
@@ -587,13 +583,57 @@ section#hero_section {
 }
 
 .category h3 {
-    font-size: 20px;
+    font-size: 13px;
     margin-top: 15px;
+    text-align: center;
+}
+.hero_section_wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_section_wrapper .swiper.mySwiper {
+    position: absolute;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, 210%);
+    margin-left: 30px;
+}
+
+.hero_section_wrapper .swiper.mySwiper2 {
+    width: 100%;
+}
+.category {
+    cursor: pointer;
+}
+.swiper-pagination {
+    transform: translate(0px, -10px) !important;
+}
+
+.mySwiper2 .swiper-wrapper {
+    padding: 40px 0px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 
-
 /*responsive codes*/
+@media only screen and (max-width: 991px) {
+    .single_hero_slider .slider_title h2{
+        font-size: 35px;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
     .main-header-wrapper {
         flex-direction: column;
@@ -608,6 +648,28 @@ section#hero_section {
     .header_left .shopping_option ul li:nth-child(2):hover .shooping_overview {
         display: none;
         animation: none
+    }
+    .slider_img img {
+        width: 55%;
+    }
+    
+    .slider_content .slider_title {
+        text-align: center;
+    }
+    
+    .slider_content .slider_info {
+        text-align: center;
+    }
+    
+    .slider_content .slider_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-pagination-bullet {
+        width: 7px !important;
+        height: 7px !important;
+        background: var(--main-color)!important;
     }
 
 }
