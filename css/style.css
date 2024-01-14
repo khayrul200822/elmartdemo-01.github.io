@@ -351,6 +351,7 @@ ul#desktop_menu {
 div#offcanvasRight {
     background-color: black;
     color: var(--sub-color);
+    min-height: 100vh;
 }
 
 .cart_info h3 a {

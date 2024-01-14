@@ -30,6 +30,29 @@ language_option.forEach(ln_item => {
     })
 })
 
+
+//add to cart count
+const increase_button = document.querySelectorAll(".increase");
+const decrease_button = document.querySelectorAll(".decrease");
+const cart_value_input = document.querySelectorAll(".cart_value");
+
+// let input_value = cart_value_input.value;
+increase_button.forEach((btn , index) => {
+  btn.addEventListener("click", () => { 
+    let inputValue = parseInt(cart_value_input[index].value);
+    cart_value_input[index].value = inputValue+1;
+   
+  })
+})
+decrease_button.forEach((btn, index1) => {
+  btn.addEventListener("click", () => {
+    let input_value1 = parseInt(cart_value_input[index1].value);
+    if(input_value1 > 1)
+    cart_value_input[index1].value = input_value1-1;
+  })
+})
+
+
   var swiper = new Swiper(".mySwiper", {
     // loop: true,
     spaceBetween: 10,
