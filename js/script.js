@@ -1,4 +1,31 @@
 
+// sticky header
+// $(document).ready(() => {
+//   $(window).on("scroll", () => {
+//     if ($(window).scrollTop()) {
+//       $("header").addClass("sticky_animation")
+//     } else {
+//       $("header").removeClass("sticky_animation")
+//     }
+//   })
+// })
+$(document).ready(() => {
+  // Calculate the bottom position of the hero section
+  const heroSectionBottom = $("#hero_section").offset().top + $("#hero_section").outerHeight();
+
+  $(window).on("scroll", () => {
+    // Get the current scroll position
+    const scrollPosition = $(window).scrollTop();
+
+    // Check if the scroll position is greater than or equal to the hero section bottom
+    if (scrollPosition >= heroSectionBottom) {
+      $("#header").addClass("sticky_animation");
+    } else {
+      $("#header").removeClass("sticky_animation");
+    }
+  });
+});
+
 //get elements
 const optionMenu = document.querySelectorAll(".currency_option li");
 const option_value = document.querySelector(".value_area");
@@ -30,7 +57,7 @@ language_option.forEach(ln_item => {
         slidesPerView: 4,
         spaceBetween: 40,
       },
-      1024: {
+      1060: {
         slidesPerView: 5,
         spaceBetween: 50,
       },

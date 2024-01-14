@@ -21,6 +21,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .top-haeder {
     padding: 10px 0px;
@@ -593,12 +596,12 @@ section#hero_section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .hero_section_wrapper .swiper.mySwiper {
     position: absolute;
-    width: 65%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -615,23 +618,57 @@ section#hero_section {
     cursor: pointer;
 }
 .swiper-pagination {
-    transform: translate(0px, -10px) !important;
+    /* transform: translate(0px, 15px) !important; */
+    text-align: right !important;
+    bottom: 40px !important;
 }
 
 .mySwiper2 .swiper-wrapper {
     padding: 40px 0px;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    /* min-height: 70vh; */
+    /* display: flex; */
+    /* align-items: center; */
+}
+.offcanvas-body::-webkit-scrollbar{
+    width: 5px;
+}
+.offcanvas-body::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 50px;
+
+
+}
+header.sticky_animation {
+    transform: translate(0px 20px);
+    animation: sticky_anim 1s alternate forwards ease-in-out;
+  }
+  @keyframes sticky_anim {
+    0% {
+      transform: translate(0px, -110px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+/*responsive codes*/
+@media only screen and (max-width: 1120px) {
+    .hero_section_wrapper .swiper.mySwiper{
+    transform: translate(0%, 150%);
+}
 }
 
-
-/*responsive codes*/
 @media only screen and (max-width: 991px) {
     .single_hero_slider .slider_title h2{
         font-size: 35px;
     }
 
+}
+@media only screen and (max-width: 800px){
+   .hero_section_wrapper .swiper.mySwiper{
+    width: 70%;
+} 
 }
 
 @media only screen and (max-width: 768px) {
@@ -639,7 +676,16 @@ section#hero_section {
         flex-direction: column;
         gap: 10px;
     }
-
+    .hero_section_wrapper .swiper.mySwiper {
+        position: unset !important;
+        transform: translate(0%, 0%);
+         margin: auto;
+        margin-bottom: 60px;
+    }
+    .swiper-pagination{
+        text-align: center !important;
+        bottom: 30px !important;
+    }
     .header_left {
         flex-direction: column;
         gap: 20px;
