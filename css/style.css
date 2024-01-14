@@ -271,10 +271,9 @@ header {
 
 .header_left .shopping_option ul li:nth-child(2) .shooping_overview .shopping_wrapper {
     width: 500px;
-    right: 0;
     height: 200px;
-    background: var(--sub-color);
-    color: var(--main-color);
+    background: #363636;
+    color: var(--sub-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,6 +289,7 @@ header {
     padding: 10px;
     padding-right: 0;
     padding-top: 5px;
+    z-index: 99;
 }
 
 .header_left .shopping_option ul li:nth-child(2) {
@@ -504,7 +504,6 @@ ul#desktop_menu li > button:hover {
 /*hero section*/
 
 .single_hero_slider .slider_title h2{
-    text-align: center;
     font-size: 50px;
     color: black;
     font-weight: 600;
@@ -637,7 +636,7 @@ section#hero_section {
 header.sticky_animation {
     position: sticky;
     top: 0;
-    transform: translate(0px 20px);
+    transform: translate(0px, 20px);
     animation: sticky_anim 1s alternate forwards ease-in-out;
   }
 

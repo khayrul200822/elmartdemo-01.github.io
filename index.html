@@ -15,6 +15,100 @@
 </head>
 
 <body>
+    <!-- side cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header d-flex justify-content-between align-items-center">
+            <h3>Cart View</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart_product d-flex flex-column">
+                <div class="single_product d-flex mb-4">
+                    <div class="product_delete"><i class="fa-solid fa-x"></i></div>
+                    <div class="cart_img">
+                        <img class="img-fluid " src="image/cart01.png" alt="cart image">
+                    </div>
+                    <div class="cart_info d-flex flex-column">
+                        <div class="cart_star d-flex ">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="review_count">
+                                (18)
+                            </span>
+                        </div>
+                        <h3><a href="#">Indian Tuna Steak</a></h3>
+                        <div class="cart_product_price">$15</div>
+                        <div class="cart_button d-flex align-items-center ">
+                            <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <input type="number" name="cart_value" class="cart_value" min="1" value="1">
+                            <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_product d-flex mb-4">
+                    <div class="product_delete"><i class="fa-solid fa-x"></i></div>
+                    <div class="cart_img">
+                        <img class="img-fluid " src="image/cart02.png" alt="cart image">
+                    </div>
+                    <div class="cart_info d-flex flex-column">
+                        <div class="cart_star d-flex ">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="review_count">
+                                (18)
+                            </span>
+                        </div>
+                        <h3><a href="#">Italian Sandwich Food</a></h3>
+                        <div class="cart_product_price">$15</div>
+                        <div class="cart_button d-flex align-items-center ">
+                            <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <input type="number" name="cart_value" class="cart_value" min="1" value="1">
+                            <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_product d-flex">
+                    <div class="product_delete"><i class="fa-solid fa-x"></i></div>
+                    <div class="cart_img">
+                        <img class="img-fluid " src="image/cart03.png" alt="cart image">
+                    </div>
+                    <div class="cart_info d-flex flex-column">
+                        <div class="cart_star d-flex ">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="review_count">
+                                (18)
+                            </span>
+                        </div>
+                        <h3><a href="#">Chinies Burger Food</a></h3>
+                        <div class="cart_product_price">$15</div>
+                        <div class="cart_button d-flex align-items-center ">
+                            <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <input type="number" name="cart_value" class="cart_value" min="1" value="1">
+                            <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_view">
+                <div class="cart_count d-flex justify-content-between  align-items-center ">
+                    <h3>Subtotal</h3>
+                    <div class="cart_total"><span class="currency_type">$</span><span class="amount">100.00</span></div>
+                </div>
+                <div class="cart_view_button d-flex align-items-center justify-content-between ">
+                    <a href="#">View Cart</a>
+                    <a href="#">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <header id="header">
         <!--top header-->
         <div class="top-haeder">
@@ -110,7 +204,7 @@
                         <li class="nav-item "><a class="nav-link" href="#">Bangladeshi Foods</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Italian Foods</a></li>
                         <li class="nav-item menu-item-has-children">
-                            <a href="shop.html" class="nav-link">Food Items <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="nav-link">Food Items <i class="fa fa-angle-down"></i></a>
                             <div class="sub-menu mega-menu mega-menu-column-4 ">
                                 <div class="list-item">
                                     <h4 class="title">Food item 1</h4>
@@ -181,104 +275,7 @@
                             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                 aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
 
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-                                <div class="offcanvas-header d-flex justify-content-between align-items-center">
-                                    <h3>Cart View</h3>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"><i class="fa-solid fa-x"></i></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <div class="cart_product d-flex flex-column">
-                                        <div class="single_product d-flex mb-4">
-                                            <div class="product_delete"><i class="fa-solid fa-x"></i></div>
-                                            <div class="cart_img">
-                                                <img class="img-fluid " src="image/cart01.png" alt="cart image">
-                                            </div>
-                                            <div class="cart_info d-flex flex-column">
-                                                <div class="cart_star d-flex ">
-                                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span class="review_count">
-                                                        (18)
-                                                    </span>
-                                                </div>
-                                                <h3><a href="#">Indian Tuna Steak</a></h3>
-                                                <div class="cart_product_price">$15</div>
-                                                <div class="cart_button d-flex align-items-center ">
-                                                    <span class="decrease"><i class="fa-solid fa-minus"></i></span>
-                                                    <input type="number" name="cart_value" class="cart_value" min="1"
-                                                        value="1">
-                                                    <span class="increase"><i class="fa-solid fa-plus"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single_product d-flex mb-4">
-                                            <div class="product_delete"><i class="fa-solid fa-x"></i></div>
-                                            <div class="cart_img">
-                                                <img class="img-fluid " src="image/cart02.png" alt="cart image">
-                                            </div>
-                                            <div class="cart_info d-flex flex-column">
-                                                <div class="cart_star d-flex ">
-                                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span class="review_count">
-                                                        (18)
-                                                    </span>
-                                                </div>
-                                                <h3><a href="#">Italian Sandwich Food</a></h3>
-                                                <div class="cart_product_price">$15</div>
-                                                <div class="cart_button d-flex align-items-center ">
-                                                    <span class="decrease"><i class="fa-solid fa-minus"></i></span>
-                                                    <input type="number" name="cart_value" class="cart_value" min="1"
-                                                        value="1">
-                                                    <span class="increase"><i class="fa-solid fa-plus"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single_product d-flex">
-                                            <div class="product_delete"><i class="fa-solid fa-x"></i></div>
-                                            <div class="cart_img">
-                                                <img class="img-fluid " src="image/cart03.png" alt="cart image">
-                                            </div>
-                                            <div class="cart_info d-flex flex-column">
-                                                <div class="cart_star d-flex ">
-                                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span class="review_count">
-                                                        (18)
-                                                    </span>
-                                                </div>
-                                                <h3><a href="#">Chinies Burger Food</a></h3>
-                                                <div class="cart_product_price">$15</div>
-                                                <div class="cart_button d-flex align-items-center ">
-                                                    <span class="decrease"><i class="fa-solid fa-minus"></i></span>
-                                                    <input type="number" name="cart_value" class="cart_value" min="1"
-                                                        value="1">
-                                                    <span class="increase"><i class="fa-solid fa-plus"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cart_view">
-                                        <div class="cart_count d-flex justify-content-between  align-items-center ">
-                                            <h3>Subtotal</h3>
-                                            <div class="cart_total"><span class="currency_type">$</span><span
-                                                    class="amount">100.00</span></div>
-                                        </div>
-                                        <div
-                                            class="cart_view_button d-flex align-items-center justify-content-between ">
-                                            <a href="#">View Cart</a>
-                                            <a href="#">Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </li>
                     </ul>
                 </div>
@@ -509,6 +506,222 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Cooki Swedish Cake Daim </h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-08.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Egg Drop Soup With Salad</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-09.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Hungarian Haluski Testy Food</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-10.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Malaysian Beef Noodle Soup</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-11.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Deshi Testy Spicy Noddles</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-12.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Parmesan Cheese Testy Recipe</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-13.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Spicy Sula & Jhal Muri</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-14.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="single_hero_slider">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 col-md-7 order-2 order-md-1">
+                                            <div class="slider_content">
+                                                <div class="slider_title">
+                                                    <h2>Vegetarian Food For Children</h2>
+                                                </div>
+                                                <div class="slider_info">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Accusamus
+                                                        unde ipsum ducimus libero! Deserunt nisi eos laboriosam quae.
+                                                    </p>
+                                                </div>
+                                                <div class="slider_button">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 order-1 order-md-2">
+                                            <div class="slider_img d-flex align-items-center justify-content-center ">
+                                                <img class="img-fluid " src="image/img-15.png" alt="hero image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -582,57 +795,65 @@
                             <div class="swiper-slide">
                                 <div class="category d-flex flex-column align-items-center justify-content-center ">
                                     <div class="cateogry_img">
-                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                        <img class="img-fluid" src="image/img-08.png" alt="category image">
                                     </div>
-                                    <h3>Cool Drinks</h3>
+                                    <h3>Cookies Food</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="category d-flex flex-column align-items-center justify-content-center ">
                                     <div class="cateogry_img">
-                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                        <img class="img-fluid" src="image/img-09.png" alt="category image">
                                     </div>
-                                    <h3>Cool Drinks</h3>
+                                    <h3>Soup Food</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="category d-flex flex-column align-items-center justify-content-center ">
                                     <div class="cateogry_img">
-                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                        <img class="img-fluid" src="image/img-10.png" alt="category image">
                                     </div>
-                                    <h3>Cool Drinks</h3>
+                                    <h3>Hungarian Food</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="category d-flex flex-column align-items-center justify-content-center ">
                                     <div class="cateogry_img">
-                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                        <img class="img-fluid" src="image/img-11.png" alt="category image">
                                     </div>
-                                    <h3>Cool Drinks</h3>
+                                    <h3>Malaysian Food</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="category d-flex flex-column align-items-center justify-content-center ">
                                     <div class="cateogry_img">
-                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                        <img class="img-fluid" src="image/img-12.png" alt="category image">
                                     </div>
-                                    <h3>Cool Drinks</h3>
+                                    <h3>Noodles Food</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="category d-flex flex-column align-items-center justify-content-center ">
                                     <div class="cateogry_img">
-                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                        <img class="img-fluid" src="image/img-13.png" alt="category image">
                                     </div>
-                                    <h3>Cool Drinks</h3>
+                                    <h3>Cheese Recipe</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="category d-flex flex-column align-items-center justify-content-center ">
                                     <div class="cateogry_img">
-                                        <img class="img-fluid" src="image/img-07.png" alt="category image">
+                                        <img class="img-fluid" src="image/img-14.png" alt="category image">
                                     </div>
-                                    <h3>Cool Drinks</h3>
+                                    <h3>Spicy Food</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category d-flex flex-column align-items-center justify-content-center ">
+                                    <div class="cateogry_img">
+                                        <img class="img-fluid" src="image/img-17.png" alt="category image">
+                                    </div>
+                                    <h3>Vegetable Salad</h3>
                                 </div>
                             </div>
                         </div>
@@ -647,9 +868,9 @@
                     <div class="tags_title d-flex align-items-center justify-content-between">
                         <h3>#Popular HashTags</h3>
                         <div class="slider_pagination d-flex">
-                           <div class="swiper-button-prev swiper-button-prev2"></div> 
-                           <div class="swiper-button-next swiper-button-next2 ms-3"></div>
-                            
+                            <div class="swiper-button-prev swiper-button-prev2"></div>
+                            <div class="swiper-button-next swiper-button-next2 ms-3"></div>
+
                         </div>
                     </div>
                     <div class="tags_container">
@@ -701,7 +922,7 @@
                                     <a href="#" class="single_tag">#HashTag-015</a>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
