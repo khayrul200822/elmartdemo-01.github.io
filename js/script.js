@@ -44,11 +44,11 @@ increase_button.forEach((btn , index) => {
    
   })
 })
-decrease_button.forEach((btn, index1) => {
+decrease_button.forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    let input_value1 = parseInt(cart_value_input[index1].value);
-    if(input_value1 > 1)
-    cart_value_input[index1].value = input_value1-1;
+    let input_value = parseInt(cart_value_input[index].value);
+    if(input_value > 1)
+    cart_value_input[index].value = input_value-1;
   })
 })
 
@@ -89,4 +89,28 @@ decrease_button.forEach((btn, index1) => {
       swiper: swiper,
     },
   
+  });
+
+  var swiper = new Swiper(".mySwiper3", {
+  //  autoplay: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1060: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    }
   });
