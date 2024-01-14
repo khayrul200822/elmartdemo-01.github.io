@@ -21,8 +21,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: sticky;
-    top: 0;
     z-index: 999;
 }
 .top-haeder {
@@ -639,9 +637,17 @@ section#hero_section {
 
 }
 header.sticky_animation {
+    position: sticky;
+    top: 0;
     transform: translate(0px 20px);
     animation: sticky_anim 1s alternate forwards ease-in-out;
   }
+
+  #has_section .has_section_wrapper{
+    height: 100vh;
+    background-color: var(--main-color);
+  }
+
   @keyframes sticky_anim {
     0% {
       transform: translate(0px, -110px);
@@ -652,6 +658,8 @@ header.sticky_animation {
       opacity: 1;
     }
   }
+
+
 /*responsive codes*/
 @media only screen and (max-width: 1120px) {
     .hero_section_wrapper .swiper.mySwiper{

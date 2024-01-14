@@ -1,24 +1,12 @@
-
-// sticky header
-// $(document).ready(() => {
-//   $(window).on("scroll", () => {
-//     if ($(window).scrollTop()) {
-//       $("header").addClass("sticky_animation")
-//     } else {
-//       $("header").removeClass("sticky_animation")
-//     }
-//   })
-// })
+//sticky header script
 $(document).ready(() => {
   // Calculate the bottom position of the hero section
   const heroSectionBottom = $("#hero_section").offset().top + $("#hero_section").outerHeight();
-
   $(window).on("scroll", () => {
     // Get the current scroll position
     const scrollPosition = $(window).scrollTop();
-
     // Check if the scroll position is greater than or equal to the hero section bottom
-    if (scrollPosition >= heroSectionBottom) {
+    if (scrollPosition >= (heroSectionBottom-100)) {
       $("#header").addClass("sticky_animation");
     } else {
       $("#header").removeClass("sticky_animation");
