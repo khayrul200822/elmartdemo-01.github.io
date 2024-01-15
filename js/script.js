@@ -23,6 +23,11 @@ close_btn.addEventListener("click", () => {
   document.body.style.overflow = "scroll"
 })
 
+// cookies accept button function
+const cookies_button = document.querySelector(".cookies_wrapper button");
+const cookies_area = document.querySelector(".cookies_alert");
+
+
 
 //preloader
 const preloader_area = document.querySelector(".preloader")
@@ -30,6 +35,9 @@ window.addEventListener("load", () => {
   setTimeout(() => {
  preloader_area.style.display = "none"
   },2000)
+  cookies_button.addEventListener("click", () => {
+    cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
+    })
  
 })
 //sticky header script
@@ -85,13 +93,6 @@ decrease_button.forEach((btn, index) => {
   })
 })
 
-// cookies accept button function
-const cookies_button = document.querySelector(".cookies_wrapper button");
-const cookies_area = document.querySelector(".cookies_alert");
-cookies_button.addEventListener("click", () => {
-cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
-console.log("button clicked")
-})
 
 
   var swiper = new Swiper(".mySwiper", {
