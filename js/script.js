@@ -29,7 +29,7 @@ const preloader_area = document.querySelector(".preloader")
 window.addEventListener("load", () => {
   setTimeout(() => {
  preloader_area.style.display = "none"
-  },100000)
+  },2000)
  
 })
 //sticky header script
