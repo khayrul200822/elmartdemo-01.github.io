@@ -980,9 +980,80 @@ section#hashTag_section {
 
 .preloader svg {
     width: 150px;
-    color: red;
 }
-
+.cookies_alert {
+    position: fixed;
+    bottom: 30px;
+    left: -400%;
+    background-color: #363636;
+    padding: 25px;
+    z-index: 99999;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: cookies_open 2s ease-in 2s forwards alternate;
+  }
+  
+  @keyframes cookies_close {
+    0% {
+      left: 20px;
+      opacity: 1;
+    }
+  
+    100% {
+      left: -400%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cookies_open {
+    0% {
+      left: -400%;
+      opacity: 0;
+    }
+  
+    100% {
+      left: 20px;
+      opacity: 1;
+    }
+  }
+  
+  .cookies_alert::before {
+    content: " ";
+    width: 110px;
+    height: 110px;
+    display: block;
+    background: url("/img/cookies_img.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+  }
+  
+  .cookies_alert .cookies_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .cookies_alert .cookies_wrapper p {
+    color: var(--sub-color);
+    font-size: 14px;
+    line-height: 1.6rem;
+  }
+  
+  .cookies_alert .cookies_wrapper button {
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 3px;
+    background-color: var(--main-color);
+    color: var(--sub-color);
+    font-size: 15px;
+    cursor: pointer;
+  }
 
 
 /*responsive codes*/
@@ -1070,7 +1141,6 @@ section#hashTag_section {
     }
     .preloader svg {
         width: 100px;
-        color: red;
     }
     .single_hero_slider .slider_title h2 {
         font-size: 28px;
@@ -1084,4 +1154,35 @@ section#hashTag_section {
     #hashTag_section .hashTag_section_wrapper .tags_title h3 {
         font-size: 20px;
     }
+    .cookies_alert {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    
+      }
+    
+      @keyframes cookies_close {
+        0% {
+          left: 0px;
+          opacity: 1;
+        }
+    
+        100% {
+          left: -400%;
+          opacity: 0;
+        }
+      }
+    
+      @keyframes cookies_open {
+        0% {
+          left: -400%;
+          opacity: 0;
+        }
+    
+        100% {
+          left: 0px;
+          opacity: 1;
+        }
+      }
 }

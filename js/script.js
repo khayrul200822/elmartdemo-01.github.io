@@ -85,6 +85,14 @@ decrease_button.forEach((btn, index) => {
   })
 })
 
+// cookies accept button function
+const cookies_button = document.querySelector(".cookies_wrapper button");
+const cookies_area = document.querySelector(".cookies_alert");
+cookies_button.addEventListener("click", () => {
+cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
+console.log("button clicked")
+})
+
 
   var swiper = new Swiper(".mySwiper", {
     // loop: true,
