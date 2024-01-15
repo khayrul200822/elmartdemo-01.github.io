@@ -959,13 +959,29 @@ section#hashTag_section {
     align-items: center;
     z-index: 99999;
 }
+.preloader h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 85px;
+    letter-spacing: 10px;
+    color: #0000002e;
+    animation: text_anim 1s ease-in infinite alternate;
+}
+@keyframes text_anim {
+    0%{
+        transform: translate(-50%, -47%);
+    }
+    100%{
+        transform: translate(-50%, -53%);
+    }
+}
 
 .preloader svg {
     width: 150px;
     color: red;
 }
-
-
 
 
 
@@ -990,10 +1006,6 @@ section#hashTag_section {
 }
 
 @media only screen and (max-width: 767px) {
-    /* .main-header-wrapper {
-        flex-direction: column;
-        gap: 10px;
-    } */
 
     .hero_section_wrapper .swiper.mySwiper {
         position: unset !important;
@@ -1006,11 +1018,6 @@ section#hashTag_section {
         text-align: center !important;
         bottom: 30px !important;
     }
-
-    /* .header_left {
-        flex-direction: column;
-        gap: 20px;
-    } */
 
     .header_left .shopping_option ul li:nth-child(2):hover .shooping_overview {
         display: none;
@@ -1057,6 +1064,14 @@ section#hashTag_section {
 }
 
 @media only screen and (max-width: 576px) {
+    .preloader h3{
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    .preloader svg {
+        width: 100px;
+        color: red;
+    }
     .single_hero_slider .slider_title h2 {
         font-size: 28px;
     }
