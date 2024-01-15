@@ -23,6 +23,15 @@ close_btn.addEventListener("click", () => {
   document.body.style.overflow = "scroll"
 })
 
+
+//preloader
+const preloader_area = document.querySelector(".preloader")
+window.addEventListener("load", () => {
+  setTimeout(() => {
+ preloader_area.style.display = "none"
+  },2000)
+ 
+})
 //sticky header script
 $(document).ready(() => {
 
