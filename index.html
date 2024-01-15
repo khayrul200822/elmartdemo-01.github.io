@@ -15,6 +15,72 @@
 </head>
 
 <body>
+    <!-- small screen search bar -->
+    <div class="search_bar">
+        <div class="container-fluid container-xl">
+            <div class="search_bar_wrapper">
+                <div class="search_close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="search_bar_header">
+                    <h1>Explore</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero vel repellat.</p>
+                </div>
+                <div class="search_bar_body">
+                    <div class="search_bar_input d-flex justify-content-between align-items-center ">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" id="search_input" placeholder="Find Your Food">
+                        <div class="search_btn d-flex align-items-center">
+                            <div class="search_option d-flex">
+                                <span><i class="fa-solid fa-sliders"></i></span>
+                                <select class="filter">
+                                    <option value="" selected disabled>Filter by</option>
+                                    <option value="">Breakfast</option>
+                                    <option value="">Lunch</option>
+                                    <option value="">Dinner</option>
+                                </select>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <ul class="search_suggestion">
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-08.png" alt="item image">
+                                </div>
+                                <h3>Food item- 01</h3>
+                            </a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-11.png" alt="item image">
+                                </div>
+                                <h3>Food item- 02</h3>
+                            </a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-12.png" alt="item image">
+                                </div>
+                                <h3>Food item- 03</h3>
+                            </a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-15.png" alt="item image">
+                                </div>
+                                <h3>Food item- 04</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- side cart -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-header d-flex justify-content-between align-items-center">
@@ -165,10 +231,11 @@
                     </div>
                     <div class="header_left d-flex justify-content-between align-items-center ">
                         <div class="search-bar">
-                            <form class="search-bar-form">
+                            <form class="search-bar-form d-none d-md-block">
                                 <input type="text" name="search_text" id="search_text" placeholder="Search your goal">
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
+                            <div class="search_icon d-grid d-md-none"><i class="fa-solid fa-magnifying-glass"></i></div>
                         </div>
                         <div class="shopping_option">
                             <ul class="ps-0 mb-0 d-flex ">
