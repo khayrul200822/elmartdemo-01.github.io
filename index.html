@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    
     <!-- small screen search bar -->
     <div class="search_bar">
         <div class="container-fluid container-xl">
@@ -29,7 +30,7 @@
                 <div class="search_bar_body">
                     <div class="search_bar_input d-flex justify-content-between align-items-center ">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" id="search_input" placeholder="Find Your Food">
+                        <input type="text" id="search_input" placeholder="Find Your Food" required>
                         <div class="search_btn d-flex align-items-center">
                             <div class="search_option d-flex">
                                 <span><i class="fa-solid fa-sliders"></i></span>
@@ -340,9 +341,9 @@
                         </li>
                         <li class="list-unstyled">
                             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
-
-
+                                aria-controls="offcanvasRight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -351,6 +352,26 @@
     </header>
     <main>
         <section id="hero_section">
+            <div class="side_option d-flex flex-column">
+                <a class="single_option" href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a> 
+                    <a class="single_option" href="#">
+                        <i class="fa-solid fa-user"></i>
+                    </a> 
+                    <a class="single_option" href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>  
+                    <a class="single_option" href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>  
+                    <a class="single_option" href="#">
+                        <i class="fa-solid fa-trophy"></i>
+                    </a>   
+                    <a class="single_option" href="#">
+                        <i class="fa-solid fa-angles-up"></i>
+                    </a> 
+            </div>
             <div class="container-fluid container-xl">
                 <div class="hero_section_wrapper">
                     <!-- Swiper -->

@@ -7,19 +7,17 @@ const close_btn = document.querySelector(".search_close");
 const search_container = document.querySelector(".search_bar");
 const show_button =document.querySelector(".search_icon");
 
+
 search_input_area.addEventListener("focus", () => {
   search_suggestion.style.animation = "fade_top 1s ease-out forwards alternate";
-  search_suggestion.style.display = "block"
 })
-//show searh bar 
 
+//show searh bar 
 show_button.addEventListener("click", () => {
   search_container.style.animation = "show_searchbar 1s ease-out forwards alternate";
-  document.body.style.overflow = "hidden"
 })
+
 //hide search bar
-
-
 close_btn.addEventListener("click", () => {
   search_container.style.animation = "fade_down 1s ease-out forwards alternate";
   document.body.style.overflow = "scroll"
