@@ -517,7 +517,7 @@ div#offcanvasRight {
     transition: .6s;
 }
 
-ul#desktop_menu li>button {
+.bottom_header_wrapper .button_side button {
     height: 45px;
     border: none;
     outline: none;
