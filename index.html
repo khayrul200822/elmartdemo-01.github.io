@@ -19,8 +19,8 @@
         <h3>ElMart</h3>
         <svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-            <circle fill="none" stroke="#ff0029" stroke-width="6" stroke-miterlimit="15" stroke-dasharray="14.2472,14.2472"
-                cx="50" cy="50" r="47">
+            <circle fill="none" stroke="#ff0029" stroke-width="6" stroke-miterlimit="15"
+                stroke-dasharray="14.2472,14.2472" cx="50" cy="50" r="47">
                 <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="5s" from="0 50 50"
                     to="360 50 50" repeatCount="indefinite" />
             </circle>
@@ -55,14 +55,15 @@
     </div>
     <!-- cookies  -->
     <div class="cookies_alert">
+        <div class="cookies_icon"><i class="fa-solid fa-cookie-bite"></i></div>
         <div class="cookies_wrapper">
-          <p class="mb-2">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.</p>
-          <div class="cookies_button">
-            <button>ACCEPT</button>
-          </div>
-          
+            <p class="mb-2">We use cookies to improve your experience on our website. By browsing this website, you
+                agree to our use of cookies.</p>
+            <div class="cookies_button">
+                <button>ACCEPT</button>
+            </div>
         </div>
-      </div>
+    </div>
     <!-- small screen search bar -->
     <div class="search_bar">
         <div class="container-fluid container-xl">
@@ -75,7 +76,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero vel repellat.</p>
                 </div>
                 <div class="search_bar_body">
-                    <div class="search_bar_input d-flex justify-content-between align-items-center ">
+                    <form class="search_bar_input d-flex justify-content-between align-items-center ">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" id="search_input" placeholder="Find Your Food" required>
                         <div class="search_btn d-flex align-items-center">
@@ -88,9 +89,9 @@
                                     <option value="">Dinner</option>
                                 </select>
                             </div>
-                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <button type="submit" href="#"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
-                    </div>
+                    </form>
                     <ul class="search_suggestion">
                         <li class="list-unstyled">
                             <a href="#" class="single_item d-flex align-items-center">
@@ -280,7 +281,8 @@
                     <div class="header_left d-flex justify-content-between align-items-center ">
                         <div class="search-bar">
                             <form class="search-bar-form d-none d-md-block">
-                                <input type="text" name="search_text" id="search_text" placeholder="Search your goal">
+                                <input type="text" name="search_text" id="search_text" placeholder="Search your goal"
+                                    required>
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
                             <div class="search_icon d-grid d-md-none"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -389,7 +391,7 @@
                         <li class="list-unstyled">
                             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                 aria-controls="offcanvasRight">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-bars"></i>
                             </button>
                         </li>
                     </ul>
@@ -992,8 +994,11 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-button-next swiper-button-next3"></div>
+                        <div class="swiper-button-prev swiper-button-prev3"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination swiper-paginationH"></div>
                 </div>
             </div>
         </section>

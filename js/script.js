@@ -15,12 +15,14 @@ search_input_area.addEventListener("focus", () => {
 //show searh bar 
 show_button.addEventListener("click", () => {
   search_container.style.animation = "show_searchbar 1s ease-out forwards alternate";
+  document.body.style.overflow = "hidden";
 })
 
 //hide search bar
 close_btn.addEventListener("click", () => {
   search_container.style.animation = "fade_down 1s ease-out forwards alternate";
-  document.body.style.overflow = "scroll"
+  document.body.style.overflow = "auto";
+  search_suggestion.style.animation = "none";
 })
 
 // cookies accept button function
@@ -38,11 +40,10 @@ window.addEventListener("load", () => {
   cookies_button.addEventListener("click", () => {
     cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
     })
- 
 })
+
 //sticky header script
 $(document).ready(() => {
-
   const heroSectionBottom = $("#hero_section").offset().top + $("#hero_section").outerHeight();
   $(window).on("scroll", () => {
     const scrollPosition = $(window).scrollTop();
@@ -100,6 +101,10 @@ decrease_button.forEach((btn, index) => {
     spaceBetween: 10,
     slidesPerView: 3,
     freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next3",
+      prevEl: ".swiper-button-prev3",
+    },
     watchSlidesProgress: true,
     breakpoints: {
       640: {
@@ -124,7 +129,7 @@ decrease_button.forEach((btn, index) => {
       prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-paginationH",
       clickable: true,
     },
     thumbs: {
