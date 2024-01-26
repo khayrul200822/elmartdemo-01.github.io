@@ -529,7 +529,7 @@ div#offcanvasRight {
     transition: .6s;
 }
 
-ul#desktop_menu li>button:hover {
+.bottom_header_wrapper .button_side button:hover {
     background: var(--sub-color);
     color: var(--main-color);
     transition: .6s;
