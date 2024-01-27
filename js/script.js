@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
   close_button.addEventListener("click", () => {
     cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
     })
-    
+    cookies_area.style.animation="cookies_open 2s ease-in 2s forwards alternate";
   cookies_button.addEventListener("click", () => {
     cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
     })
