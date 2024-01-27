@@ -26,9 +26,9 @@ close_btn.addEventListener("click", () => {
 })
 
 // cookies accept button function
-const cookies_button = document.querySelector(".cookies_wrapper button");
+const cookies_button = document.querySelector(".open_btn");
 const cookies_area = document.querySelector(".cookies_alert");
-
+const close_button = document.querySelector(".close_btn")
 
 
 //preloader
@@ -37,6 +37,10 @@ window.addEventListener("load", () => {
   setTimeout(() => {
  preloader_area.style.display = "none"
   },2000)
+  close_button.addEventListener("click", () => {
+    cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
+    })
+    
   cookies_button.addEventListener("click", () => {
     cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
     })
