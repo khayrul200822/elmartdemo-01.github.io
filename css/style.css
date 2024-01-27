@@ -1046,7 +1046,20 @@ section#hashTag_section {
     align-items: center;
     z-index: 99999;
 }
-
+.spinner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: var(--main-color) #0000;
+    animation: spinner-0tkp9a 1s infinite;
+ }
+ 
+ @keyframes spinner-0tkp9a {
+    to {
+       transform: rotate(.5turn);
+    }
+ }
 .preloader h3 {
     position: absolute;
     top: 50%;
