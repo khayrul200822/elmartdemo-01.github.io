@@ -489,16 +489,19 @@ div#offcanvasRight {
 
 .cart_view .cart_view_button {
     margin-top: 15px;
+    gap: 15px;
 }
 
 .cart_view .cart_view_button a {
-    padding: 12px 35px;
+    padding: 15px 35px;
     background: var(--sub-color);
     color: var(--main-color);
     border-radius: 50px;
     font-weight: 500;
     font-size: 16px;
     transition: .6s;
+    width: 100%;
+    text-align: center;
 }
 
 .cart_view .cart_view_button a:hover {
