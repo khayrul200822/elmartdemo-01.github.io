@@ -952,6 +952,7 @@ section#hashTag_section {
     border-bottom: 1px solid var(--sub-color);
     padding: 4px 0px;
     background: var(--main-color);
+    gap: 10px;
 }
 
 .search_suggestion .single_item .item_img {
@@ -966,7 +967,7 @@ section#hashTag_section {
 }
 
 .search_suggestion .single_item {
-    color: var(--sub-color);
+    color: var(--third-color);
 }
 
 .search_suggestion .single_item .item_img img {
