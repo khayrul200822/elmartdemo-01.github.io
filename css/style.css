@@ -155,9 +155,11 @@ header {
     color: var(--sub-color);
     margin-bottom: 0;
 }
-.main-header .main-header-wrapper .logo a h3 span{
+
+.main-header .main-header-wrapper .logo a h3 span {
     color: var(--third-color);
 }
+
 .main-header {
     padding: 10px 0px;
     border-bottom: 1px solid #ffffff50;
@@ -346,6 +348,7 @@ ul#desktop_menu {
     font-size: 15px;
     font-weight: 600 !important;
 }
+
 .cart_info .cart_button span.decrease {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -355,6 +358,7 @@ ul#desktop_menu {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 .cart_product .single_product.d-flex .cart_img {
     width: 110px;
     height: 110px;
@@ -586,12 +590,16 @@ div#offcanvasRight {
 }
 
 .hero_section_wrapper .single_hero_slider {
-    padding: 15px 50px;
+    padding: 0px 50px;
 }
 
 section#hero_section {
     background: var(--main-color);
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#hero_section .side_option {
@@ -626,11 +634,13 @@ section#hero_section .side_option {
     font-weight: 600;
     color: var(--third-color);
 }
+
 .swiper-button-next3::after,
 .swiper-button-prev3::after {
     font-size: 16px !important;
     color: var(--main-color);
 }
+
 .mySwiper .swiper-wrapper {
     padding: 0px 30px;
 }
@@ -708,23 +718,19 @@ section#hero_section .side_option {
 }
 
 .hero_section_wrapper {
-    position: relative;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
 }
 
 .hero_section_wrapper .swiper.mySwiper {
-    position: absolute;
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 60px;
-    left: 50%;
-    transform: translate(-55%, 0%);
-    margin-left: 30px;
+    margin-top: 50px;
 }
 
 .hero_section_wrapper .swiper.mySwiper2 {
@@ -735,13 +741,11 @@ section#hero_section .side_option {
     cursor: pointer;
 }
 
-.swiper-pagination {
-    /* text-align: right !important; */
-    bottom: 20px !important;
+.swiper-paginationH {
+    position: unset !important;
 }
 
 .mySwiper2 .swiper-wrapper {
-    padding: 40px 0px;
     display: flex;
     align-items: center;
 }
@@ -1046,6 +1050,7 @@ section#hashTag_section {
     align-items: center;
     z-index: 99999;
 }
+
 .spinner {
     width: 100px;
     height: 100px;
@@ -1053,13 +1058,14 @@ section#hashTag_section {
     border: 9px solid;
     border-color: var(--main-color) #0000;
     animation: spinner-0tkp9a 1s infinite;
- }
- 
- @keyframes spinner-0tkp9a {
+}
+
+@keyframes spinner-0tkp9a {
     to {
-       transform: rotate(.5turn);
+        transform: rotate(.5turn);
     }
- }
+}
+
 .preloader h3 {
     position: absolute;
     top: 50%;
@@ -1153,51 +1159,48 @@ section#hashTag_section {
     font-size: 15px;
     cursor: pointer;
 }
+
 .cookies_alert .cookies_wrapper .close_btn {
     background-color: #333;
 }
 
-/*responsive codes*/
-@media only screen and (max-width: 1120px) {
-    .hero_section_wrapper .swiper.mySwiper {
-        /* transform: translate(0%, 150%); */
-    }
+.slider_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+
+
+/*responsive codes*/
+
 
 @media only screen and (max-width: 991px) {
     .single_hero_slider .slider_title h2 {
         font-size: 35px;
     }
-    .hero_section_wrapper .swiper.mySwiper{
-        bottom: 115px;
-    }
-    .swiper-pagination{
-        bottom: 55px !important;
-    }
 
 }
-
+@media only screen and (max-width: 920px) {
+    .mySwiper2 .swiper-wrapper{
+        padding: 30px 0px;
+    }
+}
 @media only screen and (max-width: 800px) {
     .hero_section_wrapper .swiper.mySwiper {
         width: 70%;
     }
-    .hero_section_wrapper{
-        min-height: 100vh;
-    }
 }
-
 @media only screen and (max-width: 767px) {
 
     .hero_section_wrapper .swiper.mySwiper {
         position: unset !important;
         transform: translate(0%, 0%);
-        margin: auto;
-        margin-bottom: 60px;
+        /* margin: auto; */
+        /* margin-bottom: 60px; */
     }
 
     .swiper-pagination {
         text-align: center !important;
-        bottom: 30px !important;
     }
 
     .header_left .shopping_option ul li:nth-child(2):hover .shooping_overview {
@@ -1274,7 +1277,7 @@ section#hashTag_section {
         margin: 20px;
 
     }
-  
+
 
     @keyframes cookies_close {
         0% {
