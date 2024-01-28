@@ -150,13 +150,13 @@ header {
 }
 
 /*header style*/
-.main-header .main-header-wrapper .logo a h3 {
+.logo a h3 {
     font-size: 45px;
     color: var(--sub-color);
     margin-bottom: 0;
 }
 
-.main-header .main-header-wrapper .logo a h3 span {
+.logo a h3 span {
     color: var(--third-color);
 }
 
@@ -169,6 +169,68 @@ header {
     position: relative;
     width: 300px;
     height: 45px;
+}
+
+.offcanvas2 .offcanvas-header>button:hover {
+    background-color: var;
+}
+
+.offcanvas2 .offcanvas-header {
+    background: var(--main-color);
+}
+
+.offcanvas2 {
+    width: 300px !important;
+}
+
+.offcanvas2 button.btn-close {
+    background: var(--sub-color) !important;
+    color: var(--main-color) !important;
+    transition: .6s;
+}
+
+.offcanvas2 button.btn-close:hover {
+    background: var(--third-color) !important;
+    transition: .6s;
+}
+
+.page_button {
+    padding: 10px 25px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: var(--third-color);
+    color: var(--main-color);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.page_button span {
+    position: relative;
+    z-index: 9;
+}
+
+.page_button::after {
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: var(--sub-color);
+    display: block;
+    left: 0;
+    top: 0;
+    transition: .6s;
+
+}
+
+.page_button:hover span {
+    color: var(--main-color);
+}
+
+.page_button:hover::after {
+    width: 100%;
 }
 
 .header_left .search-bar form.search-bar-form input {
@@ -216,6 +278,10 @@ header {
 
 .bottom_header {
     border-bottom: 1px solid #ffffff50;
+}
+
+.bottom_header_wrapper {
+    padding: 5px 0px;
 }
 
 .header_left .shopping_option ul {
@@ -345,7 +411,7 @@ ul#desktop_menu {
 
 .nav-link {
     color: var(--third-color) !important;
-    font-size: 15px;
+    font-size: 16px !important;
     font-weight: 600 !important;
 }
 
@@ -644,16 +710,20 @@ section#hero_section .side_option {
 .mySwiper .swiper-wrapper {
     padding: 25px 30px;
 }
+
 .swiper-button-prev3 {
     left: -30px !important;
 }
-.slider_container{
+
+.slider_container {
     width: 70%;
     position: relative;
 }
+
 .swiper-button-next3 {
     right: -30px !important;
 }
+
 .swiper-button-prev3 {
     left: -6px;
     border-radius: 100%;
@@ -1107,7 +1177,6 @@ section#hashTag_section {
     width: 400px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* animation: cookies_open 2s ease-in 2s forwards alternate; */
 }
 
 @keyframes cookies_close {
@@ -1176,6 +1245,93 @@ section#hashTag_section {
     object-fit: contain;
 }
 
+/* accordian style */
+.accordion-container .accordion-title {
+    position: relative;
+    margin: 0;
+    display: block;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+.accordion-content {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+}
+
+.accordion-container .accordion-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    width: 12px;
+    height: 2px;
+    transform: rotate(90deg);
+    background: black;
+    transition: all .3s ease-in-out;
+}
+
+.accordion-container .accordion-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    width: 12px;
+    height: 2px;
+    background: black;
+    transition: all .2s ease-in-out;
+}
+
+.accordion-container .accordion-title.open::before {
+    transform: rotate(180deg);
+    background: var(--third-color);
+}
+
+.accordion-container .accordion-title.open::after {
+    opacity: 0;
+    background: var(--third-color);
+}
+
+.accordion-content a {
+    display: block;
+    padding: 5px 0px;
+    color: var(--main-color);
+    transition: .6s;
+}
+
+.accordion-content a:hover {
+    color: #333;
+    transition: .6s;
+}
+
+
+.accordion-container .menu_item {
+    color: var(--main-color);
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    transition: .6s;
+}
+
+.accordion-container .menu_item:hover {
+    color: var(--third-color);
+    transition: .6s;
+    background: var(--main-color);
+}
+.accordion-container .accordion-title.open{
+    background-color: var(--main-color);
+    color: var(--third-color);
+}
+.accordion-container .accordion-title:hover::before {
+    background: var(--third-color);
+}
+
+.accordion-container .accordion-title:hover::after {
+    background: var(--third-color);
+}
+
+
 
 /*responsive codes*/
 
@@ -1186,8 +1342,9 @@ section#hashTag_section {
     }
 
 }
+
 @media only screen and (max-width: 920px) {
-    .mySwiper2 .swiper-wrapper{
+    .mySwiper2 .swiper-wrapper {
         padding: 30px 0px;
     }
 }
