@@ -166,6 +166,36 @@ decrease_button.forEach((btn, index) => {
     }
   });
 
+  var swiper = new Swiper(".mySwiper4", {
+    //  autoplay: true,
+      spaceBetween: 0,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+      },
+      pagination: {
+        el: ".swiper-pagination4",
+        clickable: true,
+      },
+      breakpoints: {
+       
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 25,
+        },
+        800: {
+          slidesPerView: 3,
+          spaceBetween: 25,
+        },
+        1140:{
+          slidesPerView: 4,
+          spaceBetween: 25,
+        }
+      }
+    });
+  
+
   // accordian script
   $(".accordion-content").css("display", "none");
 
