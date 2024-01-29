@@ -1350,7 +1350,7 @@ section#hashTag_section {
     text-wrap: nowrap;
     white-space: nowrap;
     overflow-wrap: break-word;
-    animation: title_anim 10s linear infinite;
+    animation: title_anim 20s linear infinite;
 }
 .text_container:hover .animation_text{
     animation-play-state: paused;
@@ -1507,6 +1507,11 @@ section.product_section {
 
 
 /*responsive codes*/
+@media only screen and (max-width: 1200px){
+    .animation_text{
+        font-size: 55px;
+    }
+}
 @media only screen and (max-width: 991px) {
     .single_hero_slider .slider_title h2 {
         font-size: 35px;
@@ -1584,20 +1589,31 @@ section.product_section {
         gap: 10px;
     }
     .animation_text{
-        font-size: 40px;
+        font-size: 35px;
     }
     .animation_text svg,i{
         font-size: 20px;
+    }
+    .product_section_title h1{
+        font-size: 30px;
     }
 
 }
 
 @media only screen and (max-width: 576px) {
+    .animation_text{
+        font-size: 30px;
+    }
+    .product_section_title h1{
+        font-size: 25px;
+    }
     .preloader h3 {
         font-size: 50px;
         letter-spacing: 5px;
     }
-
+    .single_product_slider{
+        margin: 0px 45px;
+    }
     .preloader svg {
         width: 100px;
     }
