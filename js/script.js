@@ -109,7 +109,6 @@ items.forEach(item => {
     item_img.style.animation = "food_img 1s ease-in forwards alternate"
    })
 })
-console.log(items)
   var swiper = new Swiper(".mySwiper", {
     // loop: true,
     spaceBetween: 10,
