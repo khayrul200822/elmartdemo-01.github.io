@@ -1405,12 +1405,16 @@ section.product_section {
     margin-bottom: 20px;
     overflow: hidden;
 }
-
-.single_product_slider .product_content h3 {
+.single_product_slider .product_content h3 a:hover{
+    color: var(--main-color);
+    transition: .6s;
+}
+.single_product_slider .product_content h3 a  {
     font-size: 22px;
     font-weight: 600;
     color: #333;
     margin-bottom: 5px;
+    transition: .6s;
 }
 
 .single_product_slider .product_content .review svg {
