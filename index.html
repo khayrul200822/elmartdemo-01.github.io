@@ -32,6 +32,89 @@
             </div>
         </div>
     </div>
+    <!--food popup-->
+    <div class="food_popup">
+        <div class="food_popup_container">
+            <div class="food_popup_bg"></div>
+            <div class="food_popup_wrapper">
+                <div class="f_popup_header d-flex justify-content-between ">
+                    <h3>Breakfast Dishes</h3>
+                    <span class="f_popup_close"><i class="fa-solid fa-x"></i></span>
+                </div>
+                <div class="popup_bottom d-flex align-items-center">
+                    <div class="f_cart_count d-grid  align-items-center">
+                        <span class="decrease count_btn">
+                            <i class="fa-solid fa-minus"></i>
+                        </span>
+                        <input type="number" class="cart cart_value" min="1" value="1">
+                        <span class="increase count_btn">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="f_cart_btn">
+                        <a href="#">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="f_popup_content">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="left_side">
+                                <img src="image/dinner-04.png" alt="left image">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="right_side">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div class="price_option">
+                                    <h4 class="option_title">Choose Price Option</h4>
+                                    <div class="option d-flex align-items-center">
+                                        <input type="radio" name="food_option" id="food_option">
+                                        <div class="option_wrapper d-flex align-items-center">
+                                            <div class="option_img mb-3">
+                                                <img class="img-fluid" src="image/lunch-04.png" alt="product image">
+                                            </div>
+                                            <div class="option_info">
+                                                <h4>Single</h4>
+                                                <span>$15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option d-flex align-items-center">
+                                        <input type="radio" name="food_option" id="food_option">
+                                        <div class="option_wrapper d-flex align-items-center">
+                                            <div class="option_img">
+                                                <img class="img-fluid" src="image/lunch-01.png" alt="product image">
+                                            </div>
+                                            <div class="option_info">
+                                                <h4>Dobul</h4>
+                                                <span>$25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more_option mt-4">
+                                    <h4 class="option_title">Sauce</h4>
+                                    <div class="single_option d-flex gap-2">
+                                        <input type="radio" name="more_option" id="more_option">
+                                        <label for="more_option">Sint dolor inventore</label>
+                                    </div>
+                                    <div class="single_option d-flex gap-2">
+                                        <input type="radio" name="more_option" id="more_option">
+                                        <label for="more_option">Molestiae debitis Saepe, ad perferendis.</label>
+                                    </div>
+                                </div>
+                                <div class="note mt-4">
+                                    <h4 class="option_title">Spacial Note</h4>
+                                    <textarea  rows="10" placeholder="Spacial Note if any... eg: extra sauce"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- small screen search bar -->
     <div class="search_bar">
         <div class="container-fluid container-xl">
@@ -1208,7 +1291,7 @@
                                                     <a href="#">
                                                         <i class="fa-solid fa-shuffle"></i>
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="#" class="food_cart_btn">
                                                         <i class="fa-solid fa-cart-plus"></i>
                                                     </a>
                                                 </div>
@@ -1250,7 +1333,7 @@
                                                     <a href="#">
                                                         <i class="fa-solid fa-shuffle"></i>
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="#" class="food_cart_btn">
                                                         <i class="fa-solid fa-cart-plus"></i>
                                                     </a>
                                                 </div>
@@ -1291,7 +1374,7 @@
                                                     <a href="#">
                                                         <i class="fa-solid fa-shuffle"></i>
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="#" class="food_cart_btn">
                                                         <i class="fa-solid fa-cart-plus"></i>
                                                     </a>
                                                 </div>
@@ -1333,7 +1416,7 @@
                                                     <a href="#">
                                                         <i class="fa-solid fa-shuffle"></i>
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="#" class="food_cart_btn">
                                                         <i class="fa-solid fa-cart-plus"></i>
                                                     </a>
                                                 </div>
@@ -1375,7 +1458,7 @@
                                                     <a href="#">
                                                         <i class="fa-solid fa-shuffle"></i>
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="#" class="food_cart_btn">
                                                         <i class="fa-solid fa-cart-plus"></i>
                                                     </a>
                                                 </div>
@@ -1417,7 +1500,7 @@
                                                     <a href="#">
                                                         <i class="fa-solid fa-shuffle"></i>
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="#" class="food_cart_btn">
                                                         <i class="fa-solid fa-cart-plus"></i>
                                                     </a>
                                                 </div>

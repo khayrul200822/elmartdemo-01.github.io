@@ -109,6 +109,28 @@ items.forEach(item => {
     item_img.style.animation = "food_img 1s ease-in forwards alternate"
    })
 })
+
+// food popup close
+const popup_close_button = document.querySelector(".f_popup_close");
+const popup_open_button = document.querySelectorAll(".food_cart_btn");
+const popup_area = document.querySelector(".food_popup");
+
+popup_open_button.forEach( item => {
+  item.addEventListener("click", () => {
+    popup_area.style.display = "block"
+    popup_area.style.transform = "scale(1)"
+    document.body.style.overflow = "hidden"
+  })
+})
+popup_close_button.addEventListener("click", () => {
+  popup_area.style.display = "none";
+  popup_area.style.transform = "scale(0)"
+  document.body.style.overflow = "scroll"
+
+})
+
+
+
   var swiper = new Swiper(".mySwiper", {
     // loop: true,
     spaceBetween: 10,
