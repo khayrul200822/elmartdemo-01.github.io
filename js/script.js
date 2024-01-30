@@ -98,8 +98,18 @@ decrease_button.forEach((btn, index) => {
   })
 })
 
-
-
+// food item animation
+const items = document.querySelectorAll(".single_food");
+items.forEach(item => {
+  let item_img =  item.querySelector(".food_img")
+  item.addEventListener("mouseleave", () => {
+   item_img.style.animation = "food_img_hide 1s ease-in forwards alternate"
+  })
+  item.addEventListener("mouseover", () => {
+    item_img.style.animation = "food_img 1s ease-in forwards alternate"
+   })
+})
+console.log(items)
   var swiper = new Swiper(".mySwiper", {
     // loop: true,
     spaceBetween: 10,
