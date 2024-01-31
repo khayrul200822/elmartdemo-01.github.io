@@ -114,6 +114,23 @@ items.forEach(item => {
 const popup_close_button = document.querySelector(".f_popup_close");
 const popup_open_button = document.querySelectorAll(".food_cart_btn");
 const popup_area = document.querySelector(".food_popup");
+const video_popup_close = document.querySelector(".close_icon");
+const video_popup_area = document.querySelector(".video_popup");
+const video_popup_open = document.querySelectorAll(".video_icon");
+// video popup
+video_popup_open.forEach( item => {
+  item.addEventListener("click", () => {
+    video_popup_area.style.display = "flex"
+    video_popup_area.style.transform = "scale(1)"
+    document.body.style.overflow = "hidden"
+  })
+})
+video_popup_close.addEventListener("click", () => {
+  video_popup_area.style.display = "none";
+  video_popup_area.style.transform = "scale(0)"
+  document.body.style.overflow = "auto"
+
+})
 
 popup_open_button.forEach( item => {
   item.addEventListener("click", () => {
@@ -196,6 +213,29 @@ popup_close_button.addEventListener("click", () => {
       },
     }
   });
+
+
+
+  var swiper = new Swiper(".mySwiper5", {
+    //  autoplay: true,
+      spaceBetween: 0,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next5",
+        prevEl: ".swiper-button-prev5",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 25,
+        },
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 25,
+        }
+      }
+    });
+  
 
   var swiper = new Swiper(".mySwiper4", {
     //  autoplay: true,
