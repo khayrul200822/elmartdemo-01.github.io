@@ -2467,7 +2467,6 @@ section.team_section {
     }
 
 }
-
 @media only screen and (max-width: 576px) {
     .chesfs_container .single_chefs{
         margin: 0px 30px;
@@ -2538,7 +2537,6 @@ section.team_section {
         margin: 20px;
 
     }
-
 
     @keyframes cookies_close {
         0% {
