@@ -489,7 +489,9 @@ div#offcanvasRight {
 }
 
 .cart_info .cart_button input::-webkit-inner-spin-button,
-.cart_info .cart_button input::-webkit-outer-spin-button {
+.cart_info .cart_button input::-webkit-outer-spin-button,
+.single_input input[type="number"]::-webkit-inner-spin-button,
+.single_input input[type="number"]::-webkit-outer-spin-button {
     appearance: none;
 }
 
@@ -632,7 +634,7 @@ div#offcanvasRight {
     color: #ffffffd6;
 }
 
-.single_hero_slider .slider_button a {
+.section_button {
     font-size: 18px;
     background-color: var(--sub-color);
     color: black;
@@ -648,7 +650,7 @@ div#offcanvasRight {
     display: flex;
 }
 
-.single_hero_slider .slider_button a:hover {
+.section_button:hover {
     color: var(--main-color);
     transition: .6s;
     box-shadow: #ffffff8c 0px 20px 30px -10px;
@@ -2065,6 +2067,259 @@ section#menu_section {
     cursor: pointer;
 }
 
+/*reservation section*/
+section.reservation_section {
+    padding: 80px 0;
+    background: var(--third-color);
+}
+
+section.reservation_section .reservation_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 40px 150px;
+    background: url("/image/reservation_bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    border-radius: 265px;
+    overflow: hidden;
+}
+.reservation_wrapper .section_title h1 {
+    color: var(--third-color);
+}
+
+.reservation_wrapper .section_title p {
+    color: var(--sub-color);
+}
+section.reservation_section .reservation_wrapper::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(21, 21, 21, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+}
+
+section.reservation_section .reservation_wrapper form.reservation_form {
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    margin-top: 50px;
+    gap: 20px;
+}
+
+section.reservation_section .reservation_wrapper form.reservation_form .single_input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section.reservation_section .reservation_wrapper form.reservation_form .single_input input,
+.single_input textarea {
+    width: 100%;
+    outline: 2px solid transparent;
+    padding: 15px;
+    outline-offset: -2px;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    /* border: 1px solid var(
+    --main-color); */
+    transition: .6s;
+}
+
+form.reservation_form .single_input input[type="time"]::-webkit-calendar-picker-indicator,
+form.reservation_form .single_input input[type="date"]::-webkit-calendar-picker-indicator {
+    z-index: 99;
+    background: none;
+    position: absolute;
+    right: 10px;
+}
+
+section.reservation_section .reservation_wrapper form.reservation_form .single_input span {
+    position: absolute;
+    right: 10px;
+    color: var(--main-color);
+    font-size: 16px;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.single_input.textarea_input span {
+    right: 10px !important;
+    top: 25px !important;
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.reservation_section .reservation_wrapper form.reservation_form .single_input textarea {
+    height: 90px;
+
+}
+
+section.reservation_section .reservation_wrapper form.reservation_form .btn_wrapper .submit_btn {
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: var(--third-color);
+    box-shadow: #e7272d78 0px 20px 30px -10px;
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+
+.category_div {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.category_div .single_category {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.single_select_input h3 {
+    font-size: 18px;
+    color: var(--third-color);
+}
+
+.category_div .single_category label {
+    font-size: 15px;
+    color: var(--third-color);
+}
+section.reservation_section .reservation_wrapper form.reservation_form .single_input input:focus, .single_input textarea:focus {
+    outline-offset: 1px;
+    transition: .6s;
+    outline: 2px solid var(--main-color);
+}
+.bottom_form{
+    width: 100%;
+}
+section.reservation_section .reservation_wrapper form.reservation_form .btn_wrapper .submit_btn:hover {
+    box-shadow: #ffffff8c 0px 20px 30px -10px;
+    background: var(--third-color);
+    color: var(--main-color);
+    transition: .6s;
+}
+/*Team section design*/
+.chesfs_container {
+    margin-top: 80px;
+}
+
+.chesfs_container .single_chefs {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 400px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: .6s;
+    border: 2px solid transparent;
+}
+
+.chesfs_container .single_chefs .chefs_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: #000000c7;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    transition: .6s;
+}
+.chesfs_container .single_chefs:hover .chefs_info{
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: .6s;
+}
+section.team_section {
+    padding: 80px 0px;
+    background: var(--smoke-color);
+}
+
+.chesfs_container .single_chefs .chefs_img {
+    width: 100%;
+    height: 400px;
+}
+
+.chesfs_container .single_chefs .chefs_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chesfs_container .single_chefs  .chefs_info h3 {
+    color: var(--third-color);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.chesfs_container .chefs_img:hover .chefs_info{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.chesfs_container .single_chefs .chefs_info > span {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.chesfs_container .single_chefs .chefs_info .location_name {
+    color: var(--third-color);
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.chesfs_container .single_chefs .chefs_info .location_name svg {
+    color: var(--main-color);
+}
+
+.chesfs_container .single_chefs .chefs_info .chefs_desc {
+    color: #bebebe;
+    padding: 0px 15px;
+}
+
+.chesfs_container .single_chefs .chefs_info .chefs_social a {
+    font-size: 18px;
+    background: var(--main-color);
+    color: var(--third-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    transition: .6s;
+}
+
+.chesfs_container .single_chefs .chefs_info .chefs_social {
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.chesfs_container .single_chefs .chefs_info .chefs_social a:hover {
+    transition: .6s;
+    background: var(--sub-color);
+    color: var(--main-color);
+}
+.chesfs_container .single_chefs:hover {
+    border: 2px solid var(--main-color);
+    transition: .6s;
+}
 
 /*responsive codes*/
 @media only screen and (max-width: 1200px) {
@@ -2087,7 +2342,10 @@ section#menu_section {
     .single_hero_slider .slider_title h2 {
         font-size: 35px;
     }
-
+    section.reservation_section .reservation_wrapper{
+        padding: 50px 30px ;
+        border-radius: 0;
+    }
     .animation_text {
         font-size: 45px;
     }
@@ -2108,6 +2366,7 @@ section#menu_section {
         width: 335px;
         height: 60%;
     }
+   
 }
 
 @media only screen and (max-width: 800px) {
@@ -2120,6 +2379,9 @@ section#menu_section {
 }
 
 @media only screen and (max-width: 767px) {
+    .chesfs_container .single_chefs{
+        margin: 0px 150px;
+    }
     .food_popup .food_popup_container .food_popup_wrapper {
         width: calc(100vw - 45px);
     }
@@ -2178,6 +2440,9 @@ section#menu_section {
 }
 
 @media only screen and (max-width: 668px) {
+    .chesfs_container .single_chefs{
+        margin: 0px 80px;
+    }
     section#hashTag_section {
         padding: 80px 0px;
     }
@@ -2204,6 +2469,9 @@ section#menu_section {
 }
 
 @media only screen and (max-width: 576px) {
+    .chesfs_container .single_chefs{
+        margin: 0px 30px;
+    }
     .f_popup_content {
         height: 470px;
         overflow: scroll;
