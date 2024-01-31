@@ -2717,6 +2717,9 @@ footer{
     outline-offset: 2px;
     transition: .6s;
 }
+.footer_content table tr td:first-child {
+    width: 40%;
+}
 .copyright_section{
     display: flex;
     align-items: center;
