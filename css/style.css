@@ -2726,7 +2726,7 @@ footer{
     background-color: var(--main-color);
 }
 .copyright_section .copyright_text p {
-    color: #C3C3C3;
+    color: var(--third-color);
     margin-bottom: 0;
     font-size: 14px;
 }
