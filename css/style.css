@@ -2720,6 +2720,10 @@ footer{
 .footer_content table tr td:first-child {
     width: 40%;
 }
+.list_wrapper{
+    display: flex;
+    gap: 100px;
+}
 .copyright_section{
     display: flex;
     align-items: center;
