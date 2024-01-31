@@ -2079,7 +2079,7 @@ section.reservation_section .reservation_wrapper {
     width: 100%;
     margin: auto;
     padding: 40px 150px;
-    background: url("/image/reservation_bg.jpg");
+    background: url("image/reservation_bg.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
