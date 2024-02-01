@@ -82,7 +82,6 @@ const increase_button = document.querySelectorAll(".increase");
 const decrease_button = document.querySelectorAll(".decrease");
 const cart_value_input = document.querySelectorAll(".cart_value");
 
-// let input_value = cart_value_input.value;
 increase_button.forEach((btn , index) => {
   btn.addEventListener("click", () => { 
     let inputValue = parseInt(cart_value_input[index].value);
@@ -229,9 +228,13 @@ popup_close_button.addEventListener("click", () => {
           slidesPerView: 1,
           spaceBetween: 25,
         },
-        991: {
+        800: {
           slidesPerView: 2,
-          spaceBetween: 25,
+          spaceBetween: 0,
+        },
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 0,
         }
       }
     });

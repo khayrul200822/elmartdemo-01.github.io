@@ -2105,6 +2105,8 @@ section#menu_section {
     cursor: pointer;
 }
 
+
+
 /*reservation section*/
 section#reservation_section {
     padding: 80px 0;
@@ -2199,8 +2201,7 @@ section#reservation_section .reservation_wrapper form.reservation_form .single_i
 }
 
 section#reservation_section .reservation_wrapper form.reservation_form .single_input textarea {
-    height: 90px;
-
+    height: 145px;
 }
 
 section#reservation_section .reservation_wrapper form.reservation_form .btn_wrapper .submit_btn {
@@ -2365,8 +2366,16 @@ section.video_section {
 .blog_wrapper {
     margin-top: 30px;
 }
+section.video_section p {
+    color: var(--sub-color);
+}
+
+section.video_section h1 {
+    color: var(--third-color);
+}
 section.video_section .video_section_wrapper {
     position: relative;
+    margin-top: 80px;
 }
 
 section.video_section .video_section_wrapper .tart_animation {
@@ -2490,10 +2499,10 @@ section.video_section .video_section_wrapper .video_img img {
 .blog_section .single_blog{
     background-color: var(--third-color);
     border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     min-height: 300px;
     justify-content: center;
-    margin: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    margin: 0px 15px;
 }
 .blog_section .single_blog .blog_img {
     width: 40%;
@@ -2595,6 +2604,9 @@ footer{
     object-fit: cover;
     height: 60px;
     object-position: center bottom;
+    animation: fire_anim_down 1.5s linear infinite alternate;
+    transform-origin: bottom;
+    transition: .6s;
 }
 .footer_content .footer_content1 p {
     font-size: 15px;
