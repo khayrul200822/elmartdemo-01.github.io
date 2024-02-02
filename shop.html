@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Elmart</title>
-     <!-- style -->
-     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
-     <link rel="stylesheet" href="css/shop.css">
-     <link rel="stylesheet" href="css/all.min.css">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/mega_menu.css">
+    <!-- style -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mega_menu.css">
 </head>
+
 <body>
-     <!--preloader-->
-     <div class="preloader">
+    <!--preloader-->
+    <div class="preloader">
         <h3>ElMart</h3>
         <div class="spinner"></div>
     </div>
@@ -29,8 +31,8 @@
             </div>
         </div>
     </div>
-      <!-- small screen search bar -->
-      <div class="search_bar">
+    <!-- small screen search bar -->
+    <div class="search_bar">
         <div class="container-fluid container-xl">
             <div class="search_bar_wrapper">
                 <div class="search_close">
@@ -203,9 +205,9 @@
         </div>
         <div class="offcanvas-body">
             <div id="accordion" class="accordion-container">
-                <a href="#" class="accordion-title menu_item">Home</a>
+                <a href="index.html" class="accordion-title menu_item">Home</a>
                 <div class="accordion-content">
-                    <a href="#">Home page 1</a>
+                    <a href="index.html">Home page 1</a>
                     <a href="#">Home page 2</a>
                     <a href="#">Home page 3</a>
                 </div>
@@ -485,15 +487,300 @@
             </div>
         </div>
     </header>
+    <main>
+        <section id="shop_section">
+            <div class="container-fluid container-xl">
+                <div class="shop_wrapper">
+                    <div class="archive-header">
+                        <h2>Shop</h2>
+                        <div class="crumb_section d-flex justify-content-between align-items-center ">
+                            <ul class="breadcrumb_div ps-0">
+                                <li class="list-unstyled">
+                                    <a href="index.html"><i class="fa-solid fa-house me-1"></i> Home</a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#">Shop</a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#">Category-01</a>
+                                </li>
+                            </ul>
+                            <div class="food_searchBar">
+                                <form>
+                                    <span class="search_icon  search_icon2 ">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </span>
+                                    <div class="search_bar_container">
+                                         <input type="search" id="food_search" placeholder="Search your Dishes">
+                                    <button type="submit">Search</button>
+                                    </div>
+                                   
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="tag_list d-flex gap-2 ps-0">
+                            <li class="list-unstyled"><a href="#"><span><i class="fa-solid fa-x"></i></span> Deshi
+                                    Food</a></li>
+                            <li class="list-unstyled"><a href="#"><span><i class="fa-solid fa-x"></i></span> Chines
+                                    Pizza</a></li>
+                            <li class="list-unstyled"><a href="#"><span><i class="fa-solid fa-x"></i></span>
+                                    Breakfast</a></li>
+                            <li class="list-unstyled"><a href="#"><span><i class="fa-solid fa-x"></i></span>
+                                    Sandrwich</a></li>
+                            <li class="list-unstyled"><a href="#"><span><i class="fa-solid fa-x"></i></span>
+                                    Burgar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product_area d-flex">
+                        <aside>
+                            <span class="side_bar_close"><i class="fa-solid fa-minus"></i></span>
+                            <div class="aside_title d-flex justify-content-between align-items-center ">
+                                <h2>Filter</h2>
+                                <button type="reset">Clear</button>
+                            </div>
+                            <div class="category mb-5">
+                                <h2 class="div_title">Category</h2>
+                                <div class="category_wrapper">
+                                    <div class="single_category">
+                                        <input type="checkbox" id="category1">
+                                        <label for="category1">Breakfast</label>
+                                    </div>
+                                    <div class="single_category">
+                                        <input type="checkbox" id="category2">
+                                        <label for="category2">Dinner</label>
+                                    </div>
+                                    <div class="single_category">
+                                        <input type="checkbox" id="category3">
+                                        <label for="category3">Lunch</label>
+                                    </div>
+                                    <div class="single_category">
+                                        <input type="checkbox" id="category4">
+                                        <label for="category4">Beverages</label>
+                                    </div>
+                                    <div class="single_category">
+                                        <input type="checkbox" id="category5">
+                                        <label for="category5">Dry Food</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter_price mb-5">
+                                <div class="price_head d-flex align-items-center justify-content-between ">
+                                    <h2 class="div_title">Price</h2>
+                                    <button>Filter</button>
+                                </div>
+                                <div class="price_inputs d-flex justify-content-between ">
+                                    <div class="field">
+                                        <span>$</span>
+                                        <input type="number" name="number" value="0" min="0" max="1000"
+                                            class="minNumber">
+                                    </div>
+                                    <div class="separator">
+                                        -
+                                    </div>
+                                    <div class="field">
+                                        <span>$</span>
+                                        <input type="number" name="number" value="1000" min="0" max="1000"
+                                            class="maxNumber">
+                                    </div>
+                                </div>
+                                <div class="price_ragne">
+                                    <div class="price_progress">
+                                    </div>
+                                    <div class="range_div">
+                                        <input type="range" name="range" min="0" max="1000" value="0"
+                                            class="min_price_range">
+                                        <input type="range" name="range" min="0" max="1000" value="10000"
+                                            class="max_price_range">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular_product mb-5">
+                                <h2 class="div_title">Popular Food</h2>
+                                <div class="popular_wrapper">
+                                    <div class="single_food d-flex align-items-center mb-3">
+                                        <div class="food_img">
+                                            <img class="img-fluid " src="image/dinner-01.png" alt="Food Image">
+                                        </div>
+                                        <div class="food_info">
+                                            <div class="food_rating d-flex gap-1 ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h3 class="food_title">Natural dry food</h3>
+                                            <p class="food_price">$80.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="single_food d-flex align-items-center mb-3">
+                                        <div class="food_img">
+                                            <img class="img-fluid " src="image/lunch-01.png" alt="Food Image">
+                                        </div>
+                                        <div class="food_info">
+                                            <div class="food_rating d-flex gap-1 ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                            </div>
+                                            <h3 class="food_title">Thai Lettuce Wraps</h3>
+                                            <p class="food_price">$55.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="single_food d-flex align-items-center mb-3">
+                                        <div class="food_img">
+                                            <img class="img-fluid " src="image/lunch-03.png" alt="Food Image">
+                                        </div>
+                                        <div class="food_info">
+                                            <div class="food_rating d-flex gap-1 ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h3 class="food_title">Chicken Salad</h3>
+                                            <p class="food_price">$55.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tags">
+                                <h2 class="div_title">Tags</h2>
+                                <div class="tags_wrapper">
+                                    <a href="#">Chines Food</a>
+                                    <a href="#">Deshi Food</a>
+                                    <a href="#">Soft Drink</a>
+                                    <a href="#">Sandrwichk</a>
+                                    <a href="#">Burgark</a>
+                                    <a href="#">Love Pizzak</a>
+                                    <a href="#">Italian Dishes</a>
+                                    <a href="#">Nodles</a>
+                                    <a href="#">Cabab</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="product_container">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
 
-      <!-- script -->
-      <script src="js/all.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.7.1.min.js"></script>
-      <script src="js/jquery.preloadinator.min.js"></script>
-      <script src="js/shop.js"></script>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <div class="row align-items-center ">
+                <div class="col-12 col-lg-6">
+                    <div class="newsletter_text">
+                        <h2>Welcome Treat First Order Offer</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form class="newsletter_form">
+                        <input type="search" id="search_input" placeholder="Enter Your Email">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="fire_effect">
+            <div class="fire1">
+                <img class="img-fluid" src="image/fire.png" alt="fire image">
+            </div>
+            <div class="fire1">
+                <img class="img-fluid" src="image/fire.png" alt="fire image">
+            </div>
+        </div>
+        <div class="container-fluid container-xl">
+            <div class="footer_wrapper">
+                <div class="footer_content">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                            <div class="footer_content1 ">
+                                <div class="logo">
+                                    <a href="#">
+                                        <h3>El<span>Mart</span></h3>
+                                    </a>
+                                </div>
+                                <p>Welcome to Foodizo, where passion meets plate symphony of flavors Nestled in the
+                                    heart beour restaurantant invites you on journey.</p>
+                                <div class="social_link d-flex gap-3 ">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                            <div class="footer_content">
+                                <h3>Our Company</h3>
+                                <div class="list_wrapper d-flex">
+                                    <ul class="ps-0">
+                                        <li class="list-unstyled"><a href="#">About us</a></li>
+                                        <li class="list-unstyled"><a href="#">Restaurant</a></li>
+                                        <li class="list-unstyled"><a href="#">Report a bug</a></li>
+                                        <li class="list-unstyled"><a href="#">FAQ</a></li>
+                                    </ul>
+                                    <ul class="ps-0">
+                                        <li class="list-unstyled"><a href="#">Blog</a></li>
+                                        <li class="list-unstyled"><a href="#">Reservation</a></li>
+                                        <li class="list-unstyled"><a href="#">Food Delivery</a></li>
+                                        <li class="list-unstyled"><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="footer_content">
+                                <h3>Opening Hours</h3>
+                                <table>
+                                    <tr>
+                                        <td>Mon - Tue</td>
+                                        <td>09.00 am - 10.00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wed - Thu</td>
+                                        <td>10.00am - 11.00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td>10.00am - 11.00pm</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <section class="copyright_section">
+        <div class="copyright_wrapper">
+            <div class="copyright_text">
+                <p>Copyright © <span>2024</span> All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- script -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.preloadinator.min.js"></script>
+    <script src="js/shop.js"></script>
 </body>
+
 </html>

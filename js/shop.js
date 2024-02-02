@@ -4,7 +4,7 @@ const search_input_area = document.querySelector("#search_input");
 const search_suggestion = document.querySelector(".search_suggestion")
 const close_btn = document.querySelector(".search_close");
 const search_container = document.querySelector(".search_bar");
-const show_button =document.querySelector(".search_icon");
+const show_button =document.querySelectorAll(".search_icon");
 
 
 search_input_area.addEventListener("focus", () => {
@@ -12,9 +12,11 @@ search_input_area.addEventListener("focus", () => {
 })
 
 //show searh bar 
-show_button.addEventListener("click", () => {
+show_button.forEach(btn => {
+  btn.addEventListener("click", () => {
   search_container.style.animation = "show_searchbar 1s ease-out forwards alternate";
   document.body.style.overflow = "hidden";
+})
 })
 
 //hide search bar
@@ -48,11 +50,11 @@ window.addEventListener("load", () => {
 
 //sticky header script
 $(document).ready(() => {
-  const heroSectionBottom = $("#hero_section").offset().top + $("#hero_section").outerHeight();
+  const heroSectionBottom = $(".archive-header").offset().top + $(".archive-header").outerHeight();
   $(window).on("scroll", () => {
     const scrollPosition = $(window).scrollTop();
 
-    if (scrollPosition >= (heroSectionBottom-300)) {
+    if (scrollPosition >= (heroSectionBottom)) {
       $("#header").addClass("sticky_animation");
     } else {
       $("#header").removeClass("sticky_animation");
@@ -84,3 +86,46 @@ language_option.forEach(ln_item => {
     $(this).toggleClass("open");
     $(this).next().slideToggle(300);
  });
+
+
+ 
+//script for price range making
+const price_ranges = document.querySelectorAll(".range_div input");
+const progress_bar = document.querySelector(".price_progress");
+const price_inputs = document.querySelectorAll(".field input");
+let price_gap = 100;
+
+price_inputs.forEach(input => {
+  input.addEventListener("input", (e) => {
+    let minValue = parseInt(price_inputs[0].value);
+    let maxValue = parseInt(price_inputs[1].value)
+    if (maxValue - minValue >= price_gap && maxValue <= 1000) {
+      if (e.target.className === "minNumber") {
+        price_ranges[0].value = minValue;
+        progress_bar.style.left = (minValue / price_ranges[0].max) * 100 + "%";
+      } else {
+        price_ranges[1].value = maxValue;
+        progress_bar.style.right = 100 - (maxValue / price_ranges[1].max) * 100
+      }
+    }
+  })
+})
+
+price_ranges.forEach(input => {
+  input.addEventListener("input", (e) => {
+    let minValue = parseInt(price_ranges[0].value);
+    let maxValue = parseInt(price_ranges[1].value)
+    if (maxValue - minValue < price_gap) {
+      if (e.target.className === "min_price_range") {
+        price_ranges[0].value = maxValue - price_gap
+      } else {
+        price_ranges[1].value = minValue + price_gap
+      }
+    } else {
+      price_inputs[0].value = minValue;
+      price_inputs[1].value = maxValue;
+      progress_bar.style.left = (minValue / price_ranges[0].max) * 100 + "%";
+      progress_bar.style.right = 100 - (maxValue / price_ranges[1].max) * 100 + "%"
+    }
+  })
+})
