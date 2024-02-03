@@ -103,7 +103,7 @@ sideBar_close.addEventListener("click", () => {
 sideBar_show.addEventListener("click", () => {
   side_bar.style.display = "block";
   product_container.style.width = "calc(100% - 300px)";
-  sideBar_show.style.display="none"
+  sideBar_show.style.display = "none"
 })
 //for sortby popup and filtaring popup
 const dropdown = document.querySelector(".pageShow_item_popup")
@@ -171,4 +171,141 @@ price_ranges.forEach(input => {
       progress_bar.style.right = 100 - (maxValue / price_ranges[1].max) * 100 + "%"
     }
   })
+})
+
+// for sort and filter value assign
+const item_value_field = document.querySelector(".show_p_item");
+const item_value = document.querySelectorAll(".pageShow_item_popup ul li")
+const sort_value = document.querySelectorAll(".short_list ul li")
+const sort_value_field = document.querySelector(".sort_item")
+
+const value_handler = (select_items, selcet_value) => {
+  select_items.forEach(item => {
+    item.addEventListener("click", () => {
+      // item_value_field.textContent = item.textContent;
+      // item.innerHTML = `<i class="fa-solid fa-check"></i> ${item.textContent}`
+      select_items.forEach(otherItem => {
+        otherItem.innerHTML = otherItem.textContent;
+      });
+      // Add icon to the clicked item
+      item.innerHTML = `<i class="fa-solid fa-check"></i> ${item.textContent}`;
+
+      // Update the item_value_field content
+      selcet_value.textContent = item.textContent;
+    })
+
+  })
+}
+value_handler(item_value, item_value_field)
+value_handler(sort_value, sort_value_field)
+
+
+
+
+//for list view;
+const list_view_button = document.querySelector(".list_view");
+const product_tank = document.querySelector(".product_container_body");
+const single_product = document.querySelectorAll(".single_product");
+const overlay = document.querySelectorAll(".product_overlay");
+const price = document.querySelectorAll(".product_price");
+const title = document.querySelectorAll('.product_title');
+const rating_number = document.querySelectorAll(".product_rating > p");
+const rating = document.querySelectorAll(".product_rating");
+const overlay_down = document.querySelectorAll(".overlay_bottom a")
+const grid_view2 = document.querySelector(".grid2_view");
+const grid_view3 = document.querySelector(".grid3_view")
+const grid_view4 = document.querySelector(".grid4_view")
+const grid_view5 = document.querySelector(".grid5_view")
+const item_class_names = ["list_product_container_body", "list_single_product", "list_product_overlay", "list_product_price", "list_product_title", "list_product_rating_p", "list_product_rating", "list_overlay_bottom_a", "grid2_single_product", "grid2_product_title"]
+
+const list_view_handler = (main_items, item_class) => {
+  main_items.forEach(item => {
+    item.classList.add(`${item_class}`)
+  })
+}
+const item_class_remove = (items, remove_class) => {
+  items.forEach(item => {
+    item.classList.remove(`${remove_class}`)
+  })
+}
+list_view_button.addEventListener("click", () => {
+  product_tank.classList.add(`${item_class_names[0]}`)
+  list_view_handler(single_product, item_class_names[1])
+  list_view_handler(overlay, item_class_names[2])
+  list_view_handler(price, item_class_names[3])
+  list_view_handler(title, item_class_names[4])
+  list_view_handler(rating_number, item_class_names[5])
+  list_view_handler(rating, item_class_names[6])
+  list_view_handler(overlay_down, item_class_names[7])
+
+  // grid2 view_remover
+  product_tank.style.gridTemplateColumns = "auto";
+  product_tank.style.gap = "15px";
+  item_class_remove(single_product, item_class_names[8])
+  item_class_remove(title, item_class_names[9])
+})
+
+// grid view 2 
+grid_view2.addEventListener("click", () => {
+  // remove list view
+  product_tank.classList.remove(`${item_class_names[0]}`)
+  item_class_remove(single_product, item_class_names[1])
+  item_class_remove(overlay, item_class_names[2])
+  item_class_remove(price, item_class_names[3])
+  item_class_remove(title, item_class_names[4])
+  item_class_remove(rating_number, item_class_names[5])
+  item_class_remove(rating, item_class_names[6])
+  item_class_remove(overlay_down, item_class_names[7])
+
+  product_tank.style.gridTemplateColumns = " 1fr 1fr";
+  product_tank.style.gap = "45px";
+  list_view_handler(single_product, item_class_names[8])
+  list_view_handler(title, item_class_names[9])
+  list_view_handler(overlay_down, item_class_names[7])
+})
+
+// for grid view 3
+grid_view3.addEventListener("click", () => {
+  product_tank.style.gridTemplateColumns = " 1fr 1fr 1fr";
+  product_tank.style.gap = "20px ";
+  // remove list veiw
+  product_tank.classList.remove(`${item_class_names[0]}`)
+  item_class_remove(single_product, item_class_names[1])
+  item_class_remove(overlay, item_class_names[2])
+  item_class_remove(price, item_class_names[3])
+  item_class_remove(title, item_class_names[4])
+  item_class_remove(rating_number, item_class_names[5])
+  item_class_remove(rating, item_class_names[6])
+  item_class_remove(overlay_down, item_class_names[7])
+})
+grid_view4.addEventListener("click", () => {
+  // remove list veiw
+  product_tank.classList.remove(`${item_class_names[0]}`)
+  item_class_remove(single_product, item_class_names[1])
+  item_class_remove(overlay, item_class_names[2])
+  item_class_remove(price, item_class_names[3])
+  item_class_remove(title, item_class_names[4])
+  item_class_remove(rating_number, item_class_names[5])
+  item_class_remove(rating, item_class_names[6])
+  item_class_remove(overlay_down, item_class_names[7])
+
+  product_tank.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
+  product_tank.style.gap = "15px";
+  item_class_remove(single_product, item_class_names[8])
+  item_class_remove(title, item_class_names[9])
+})
+
+grid_view5.addEventListener("click", () => {
+  // remove list veiw
+  product_tank.classList.remove(`${item_class_names[0]}`)
+  item_class_remove(single_product, item_class_names[1])
+  item_class_remove(overlay, item_class_names[2])
+  item_class_remove(price, item_class_names[3])
+  item_class_remove(title, item_class_names[4])
+  item_class_remove(rating_number, item_class_names[5])
+  item_class_remove(rating, item_class_names[6])
+  item_class_remove(overlay_down, item_class_names[7])
+  // grid2 view_remover
+  product_tank.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr";
+  product_tank.style.gap = "15px";
 })
