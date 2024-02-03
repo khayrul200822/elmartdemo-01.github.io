@@ -309,3 +309,57 @@ grid_view5.addEventListener("click", () => {
   product_tank.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr";
   product_tank.style.gap = "15px";
 })
+
+
+//script for pagination
+const current_page_no = document.querySelector(".page_no");
+$('.pagination').pajinatify({
+  dir: 'rtl',
+  onChange: function (currentPage) {
+    current_page_no.textContent = currentPage;
+  },
+});
+
+
+// scroll to top button
+var $button = $.backToTop({
+
+  // background color
+  backgroundColor: '#e7272d',
+
+  // text color
+  color: '#FFFFFF',
+
+  // container element
+  container: this._body, 
+
+  // 'nonn', 'spin', 'fade', 'zoom', or 'spin-inverse'
+  effect: 'spin',
+
+  // enable the back to top button
+  enabled: true, 
+
+  // width/height of the back to top button
+  height: 70,  
+  width: 70,
+
+  // icon
+  icon: 'fas fa-chevron-up',
+
+  // margins 
+  marginX: 20,
+  marginY: 20,  
+
+  // bottom/top left/right
+  position: 'bottom right',           
+
+  // trigger position
+  pxToTrigger: 600,
+
+  // or 'fawesome'
+  theme: 'default',
+
+  // z-index
+  zIndex: 999
+  
+});

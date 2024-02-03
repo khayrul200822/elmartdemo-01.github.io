@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.pajinatify.css">
     <link rel="stylesheet" href="css/mega_menu.css">
+    <link rel="stylesheet" href="css/jquery-backToTop.min.css">
 </head>
 
 <body>
@@ -343,9 +345,9 @@
                                 <div class="list-item">
                                     <h4 class="title">Food item 1</h4>
                                     <ul class="ps-0 mt-3">
-                                        <li><a class="new_" href="product01.html" target="_blank">Product page-01</a>
+                                        <li><a class="new_" href="product.html" target="_blank">Product page -01</a>
                                         </li>
-                                        <li><a class="new_" href="product.html" target="_blank">Product page-02</a></li>
+                                        <li><a href="product.html" target="_blank">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
@@ -362,8 +364,8 @@
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                         <li><a href="#">Product List</a></li>
-                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
-                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#" >Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#" class="new_">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar </a></li>
@@ -412,15 +414,15 @@
                                 <div class="list-item">
                                     <h4 class="title">Food item 1</h4>
                                     <ul class="ps-0 mt-3">
-                                        <li><a class="new_" href="product01.html" target="_blank">Product page-01</a>
+                                        <li><a href="product01.html" target="_blank">Product page-01</a>
                                         </li>
-                                        <li><a class="new_" href="product.html" target="_blank">Product page-02</a></li>
+                                        <li><a href="product.html" target="_blank">Product page-02</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                         <li><a href="#">Product List</a></li>
-                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#" class="new_">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                     </ul>
                                 </div>
@@ -443,7 +445,7 @@
                                     <ul class="ps-0 mt-3">
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
-                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#" class="new_">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebart</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
@@ -459,7 +461,7 @@
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                         <li><a href="#">Product List</a></li>
-                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#" class="new_">Product List</a></li>
                                     </ul>
                                 </div>
                                 <div class="list-item">
@@ -467,7 +469,7 @@
                                     <ul class="ps-0 mt-3">
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                         <li><a href="#">Product List</a></li>
-                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#" class="new_">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No </a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                     </ul>
@@ -536,132 +538,134 @@
                     </div>
                     <div class="product_area d-flex justify-content-between">
                         <aside>
-                            <span class="side_bar_close"><i class="fa-solid fa-minus"></i></span>
-                            <div class="aside_title d-flex justify-content-between align-items-center ">
-                                <h2>Filter</h2>
-                                <button type="reset">Clear</button>
-                            </div>
-                            <div class="category mb-5">
-                                <h2 class="div_title">Category</h2>
-                                <div class="category_wrapper">
-                                    <div class="single_category">
-                                        <input type="checkbox" id="category1">
-                                        <label for="category1">Breakfast</label>
-                                    </div>
-                                    <div class="single_category">
-                                        <input type="checkbox" id="category2">
-                                        <label for="category2">Dinner</label>
-                                    </div>
-                                    <div class="single_category">
-                                        <input type="checkbox" id="category3">
-                                        <label for="category3">Lunch</label>
-                                    </div>
-                                    <div class="single_category">
-                                        <input type="checkbox" id="category4">
-                                        <label for="category4">Beverages</label>
-                                    </div>
-                                    <div class="single_category">
-                                        <input type="checkbox" id="category5">
-                                        <label for="category5">Dry Food</label>
-                                    </div>
+                            <div class="aside_wrapper">
+                                <span class="side_bar_close"><i class="fa-solid fa-minus"></i></span>
+                                <div class="aside_title d-flex justify-content-between align-items-center ">
+                                    <h2>Filter</h2>
+                                    <button type="reset">Clear</button>
                                 </div>
-                            </div>
-                            <div class="filter_price mb-5">
-                                <div class="price_head d-flex align-items-center justify-content-between ">
-                                    <h2 class="div_title">Price</h2>
-                                    <button>Filter</button>
-                                </div>
-                                <div class="price_inputs d-flex justify-content-between ">
-                                    <div class="field">
-                                        <span>$</span>
-                                        <input type="number" name="number" value="0" min="0" max="1000"
-                                            class="minNumber">
-                                    </div>
-                                    <div class="separator">
-                                        -
-                                    </div>
-                                    <div class="field">
-                                        <span>$</span>
-                                        <input type="number" name="number" value="1000" min="0" max="1000"
-                                            class="maxNumber">
-                                    </div>
-                                </div>
-                                <div class="price_ragne">
-                                    <div class="price_progress">
-                                    </div>
-                                    <div class="range_div">
-                                        <input type="range" name="range" min="0" max="1000" value="0"
-                                            class="min_price_range">
-                                        <input type="range" name="range" min="0" max="1000" value="10000"
-                                            class="max_price_range">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="popular_product mb-5">
-                                <h2 class="div_title">Popular Food</h2>
-                                <div class="popular_wrapper">
-                                    <div class="single_food d-flex align-items-center mb-3">
-                                        <div class="food_img">
-                                            <img class="img-fluid " src="image/dinner-01.png" alt="Food Image">
+                                <div class="category mb-5">
+                                    <h2 class="div_title">Category</h2>
+                                    <div class="category_wrapper">
+                                        <div class="single_category">
+                                            <input type="checkbox" id="category1">
+                                            <label for="category1">Breakfast</label>
                                         </div>
-                                        <div class="food_info">
-                                            <div class="food_rating d-flex gap-1 ">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                        <div class="single_category">
+                                            <input type="checkbox" id="category2">
+                                            <label for="category2">Dinner</label>
+                                        </div>
+                                        <div class="single_category">
+                                            <input type="checkbox" id="category3">
+                                            <label for="category3">Lunch</label>
+                                        </div>
+                                        <div class="single_category">
+                                            <input type="checkbox" id="category4">
+                                            <label for="category4">Beverages</label>
+                                        </div>
+                                        <div class="single_category">
+                                            <input type="checkbox" id="category5">
+                                            <label for="category5">Dry Food</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter_price mb-5">
+                                    <div class="price_head d-flex align-items-center justify-content-between ">
+                                        <h2 class="div_title">Price</h2>
+                                        <button>Filter</button>
+                                    </div>
+                                    <div class="price_inputs d-flex justify-content-between ">
+                                        <div class="field">
+                                            <span>$</span>
+                                            <input type="number" name="number" value="0" min="0" max="1000"
+                                                class="minNumber">
+                                        </div>
+                                        <div class="separator">
+                                            -
+                                        </div>
+                                        <div class="field">
+                                            <span>$</span>
+                                            <input type="number" name="number" value="1000" min="0" max="1000"
+                                                class="maxNumber">
+                                        </div>
+                                    </div>
+                                    <div class="price_ragne">
+                                        <div class="price_progress">
+                                        </div>
+                                        <div class="range_div">
+                                            <input type="range" name="range" min="0" max="1000" value="0"
+                                                class="min_price_range">
+                                            <input type="range" name="range" min="0" max="1000" value="10000"
+                                                class="max_price_range">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular_product mb-5">
+                                    <h2 class="div_title">Popular Food</h2>
+                                    <div class="popular_wrapper">
+                                        <div class="single_food d-flex align-items-center mb-3">
+                                            <div class="food_img">
+                                                <img class="img-fluid " src="image/dinner-01.png" alt="Food Image">
                                             </div>
-                                            <h3 class="food_title">Natural dry food</h3>
-                                            <p class="food_price">$80.00</p>
-                                        </div>
-                                    </div>
-                                    <div class="single_food d-flex align-items-center mb-3">
-                                        <div class="food_img">
-                                            <img class="img-fluid " src="image/lunch-01.png" alt="Food Image">
-                                        </div>
-                                        <div class="food_info">
-                                            <div class="food_rating d-flex gap-1 ">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                            <div class="food_info">
+                                                <div class="food_rating d-flex gap-1 ">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <h3 class="food_title">Natural dry food</h3>
+                                                <p class="food_price">$80.00</p>
                                             </div>
-                                            <h3 class="food_title">Thai Lettuce Wraps</h3>
-                                            <p class="food_price">$55.00</p>
                                         </div>
-                                    </div>
-                                    <div class="single_food d-flex align-items-center mb-3">
-                                        <div class="food_img">
-                                            <img class="img-fluid " src="image/lunch-03.png" alt="Food Image">
-                                        </div>
-                                        <div class="food_info">
-                                            <div class="food_rating d-flex gap-1 ">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                        <div class="single_food d-flex align-items-center mb-3">
+                                            <div class="food_img">
+                                                <img class="img-fluid " src="image/lunch-01.png" alt="Food Image">
                                             </div>
-                                            <h3 class="food_title">Chicken Salad</h3>
-                                            <p class="food_price">$55.00</p>
+                                            <div class="food_info">
+                                                <div class="food_rating d-flex gap-1 ">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                </div>
+                                                <h3 class="food_title">Thai Lettuce Wraps</h3>
+                                                <p class="food_price">$55.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="single_food d-flex align-items-center mb-3">
+                                            <div class="food_img">
+                                                <img class="img-fluid " src="image/lunch-03.png" alt="Food Image">
+                                            </div>
+                                            <div class="food_info">
+                                                <div class="food_rating d-flex gap-1 ">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <h3 class="food_title">Chicken Salad</h3>
+                                                <p class="food_price">$55.00</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tags">
-                                <h2 class="div_title">Tags</h2>
-                                <div class="tags_wrapper">
-                                    <a href="#">Chines Food</a>
-                                    <a href="#">Deshi Food</a>
-                                    <a href="#">Soft Drink</a>
-                                    <a href="#">Sandrwichk</a>
-                                    <a href="#">Burgark</a>
-                                    <a href="#">Love Pizzak</a>
-                                    <a href="#">Italian Dishes</a>
-                                    <a href="#">Nodles</a>
-                                    <a href="#">Cabab</a>
+                                <div class="tags">
+                                    <h2 class="div_title">Tags</h2>
+                                    <div class="tags_wrapper">
+                                        <a href="#">Chines Food</a>
+                                        <a href="#">Deshi Food</a>
+                                        <a href="#">Soft Drink</a>
+                                        <a href="#">Sandrwichk</a>
+                                        <a href="#">Burgark</a>
+                                        <a href="#">Love Pizzak</a>
+                                        <a href="#">Italian Dishes</a>
+                                        <a href="#">Nodles</a>
+                                        <a href="#">Cabab</a>
+                                    </div>
                                 </div>
                             </div>
                         </aside>
@@ -708,8 +712,8 @@
                                                 <ul class="ps-0">
                                                     <li class="list-unstyled">30</li>
                                                     <li class="list-unstyled">
-                                                            <i class="fa-solid fa-check"></i>
-                                                            50
+                                                        <i class="fa-solid fa-check"></i>
+                                                        50
                                                     </li>
                                                     <li class="list-unstyled">80</li>
                                                     <li class="list-unstyled">100</li>
@@ -730,7 +734,8 @@
                                                     <li class="list-unstyled">Price</li>
                                                     <li class="list-unstyled">Popular</li>
                                                     <li class="list-unstyled">
-                                                       <i class="fa-solid fa-check"></i> Featured</li>
+                                                        <i class="fa-solid fa-check"></i> Featured
+                                                    </li>
                                                     <li class="list-unstyled">Popular</li>
                                                 </ul>
                                             </div>
@@ -744,7 +749,7 @@
                                             <img class="img-fluid" src="image/breakfast-04.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -772,7 +777,7 @@
                                             <img class="img-fluid" src="image/breakfast-06.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -800,7 +805,7 @@
                                             <img class="img-fluid" src="image/lunch-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -828,7 +833,7 @@
                                             <img class="img-fluid" src="image/dinner-03.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -856,7 +861,7 @@
                                             <img class="img-fluid" src="image/lunch-03.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -884,7 +889,7 @@
                                             <img class="img-fluid" src="image/dinner-07.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -912,7 +917,7 @@
                                             <img class="img-fluid" src="image/lunch-06.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -940,7 +945,7 @@
                                             <img class="img-fluid" src="image/img-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -968,7 +973,7 @@
                                             <img class="img-fluid" src="image/beverages-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -996,7 +1001,7 @@
                                             <img class="img-fluid" src="image/beverages-06.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1024,7 +1029,7 @@
                                             <img class="img-fluid" src="image/breakfast-05.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1052,7 +1057,7 @@
                                             <img class="img-fluid" src="image/lunch-03.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1080,7 +1085,7 @@
                                             <img class="img-fluid" src="image/lunch-02.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1108,7 +1113,7 @@
                                             <img class="img-fluid" src="image/dinner-04.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1136,7 +1141,7 @@
                                             <img class="img-fluid" src="image/dinner-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1164,7 +1169,7 @@
                                             <img class="img-fluid" src="image/breakfast-02.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title mb-2">Chines Sandrawich</h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1188,15 +1193,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="pagination_container d-flex align-items-center justify-content-between ">
+                                <div class="pagination" data-total-count="40" data-take="10"></div>
+                                <div class="short_by d-flex align-items-center justify-content-between ">
+                                    <p>Page: <span class="page_no">1</span> of <span class="total_pages">4</span></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
     </main>
     <footer>
         <div class="newsletter">
@@ -1293,15 +1300,13 @@
             </div>
         </div>
     </section>
-
-
-
-
     <!-- script -->
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.pajinatify.js"></script>
     <script src="js/jquery.preloadinator.min.js"></script>
+    <script src="js/jquery-backToTop.min.js"></script>
     <script src="js/shop.js"></script>
 </body>
 

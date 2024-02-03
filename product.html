@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Elmart</title>
+    <!-- style -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mega_menu.css">
+    <link rel="stylesheet" href="css/jquery-backToTop.min.css">
+</head>
+
+<body>
+    <!--preloader-->
+    <div class="preloader">
+        <h3>ElMart</h3>
+        <div class="spinner"></div>
+    </div>
+    <!-- cookies  -->
+    <div class="cookies_alert">
+        <div class="cookies_icon"><i class="fa-solid fa-cookie-bite"></i></div>
+        <div class="cookies_wrapper">
+            <p class="mb-2">We use cookies to improve your experience on our website. By browsing this website, you
+                agree to our use of cookies.</p>
+            <div class="cookies_button d-flex justify-content-between ">
+                <button class="open_btn">ACCEPT</button>
+                <button class="close_btn">CLOSE</button>
+            </div>
+        </div>
+    </div>
+    <!-- small screen search bar -->
+    <div class="search_bar">
+        <div class="container-fluid container-xl">
+            <div class="search_bar_wrapper">
+                <div class="search_close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="search_bar_header">
+                    <h1>Explore</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero vel repellat.</p>
+                </div>
+                <div class="search_bar_body">
+                    <form class="search_bar_input d-flex justify-content-between align-items-center ">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" id="search_input" placeholder="Find Your Food" required>
+                        <div class="search_btn d-flex align-items-center">
+                            <div class="search_option d-flex">
+                                <span><i class="fa-solid fa-sliders"></i></span>
+                                <select class="filter">
+                                    <option value="" selected disabled>Filter by</option>
+                                    <option value="">Breakfast</option>
+                                    <option value="">Lunch</option>
+                                    <option value="">Dinner</option>
+                                </select>
+                            </div>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <ul class="search_suggestion">
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-08.png" alt="item image">
+                                </div>
+                                <h3>Food item- 01</h3>
+                            </a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-11.png" alt="item image">
+                                </div>
+                                <h3>Food item- 02</h3>
+                            </a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-12.png" alt="item image">
+                                </div>
+                                <h3>Food item- 03</h3>
+                            </a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="single_item d-flex align-items-center">
+                                <div class="item_img">
+                                    <img class="img-fluid" src="image/img-15.png" alt="item image">
+                                </div>
+                                <h3>Food item- 04</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- side cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header d-flex justify-content-between align-items-center">
+            <h3>Cart View</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart_product d-flex flex-column">
+                <div class="single_product d-flex mb-4">
+                    <div class="product_delete"><i class="fa-solid fa-x"></i></div>
+                    <div class="cart_img">
+                        <img class="img-fluid " src="image/cart01.png" alt="cart image">
+                    </div>
+                    <div class="cart_info d-flex flex-column">
+                        <div class="cart_star d-flex ">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="review_count">
+                                (18)
+                            </span>
+                        </div>
+                        <h3><a href="#">Indian Tuna Steak</a></h3>
+                        <div class="cart_product_price">$15</div>
+                        <div class="cart_button d-flex align-items-center ">
+                            <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <input type="number" name="cart_value" class="cart_value" min="1" value="1">
+                            <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_product d-flex mb-4">
+                    <div class="product_delete"><i class="fa-solid fa-x"></i></div>
+                    <div class="cart_img">
+                        <img class="img-fluid " src="image/cart02.png" alt="cart image">
+                    </div>
+                    <div class="cart_info d-flex flex-column">
+                        <div class="cart_star d-flex ">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="review_count">
+                                (18)
+                            </span>
+                        </div>
+                        <h3><a href="#">Italian Sandwich Food</a></h3>
+                        <div class="cart_product_price">$15</div>
+                        <div class="cart_button d-flex align-items-center ">
+                            <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <input type="number" name="cart_value" class="cart_value" min="1" value="1">
+                            <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_product d-flex">
+                    <div class="product_delete"><i class="fa-solid fa-x"></i></div>
+                    <div class="cart_img">
+                        <img class="img-fluid " src="image/cart03.png" alt="cart image">
+                    </div>
+                    <div class="cart_info d-flex flex-column">
+                        <div class="cart_star d-flex ">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="review_count">
+                                (18)
+                            </span>
+                        </div>
+                        <h3><a href="#">Chinies Burger Food</a></h3>
+                        <div class="cart_product_price">$15</div>
+                        <div class="cart_button d-flex align-items-center ">
+                            <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <input type="number" name="cart_value" class="cart_value" min="1" value="1">
+                            <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_view">
+                <div class="cart_count d-flex justify-content-between  align-items-center ">
+                    <h3>Subtotal</h3>
+                    <div class="cart_total"><span class="currency_type">$</span><span class="amount">100.00</span></div>
+                </div>
+                <div class="cart_view_button d-flex flex-column  align-items-center justify-content-between ">
+                    <a href="#">View Cart</a>
+                    <a href="#">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--small screen menu-->
+    <div class="offcanvas offcanvas-start offcanvas2" tabindex="-1" id="offcanvasExample">
+        <div class="offcanvas-header">
+            <div class="logo">
+                <a href="#" class="navbar-brand">
+                    <h3>El<span>Mart</span></h3>
+                </a>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="accordion" class="accordion-container">
+                <a href="index.html" class="accordion-title menu_item">Home</a>
+                <div class="accordion-content">
+                    <a href="index.html">Home page 1</a>
+                    <a href="#">Home page 2</a>
+                    <a href="#">Home page 3</a>
+                </div>
+                <a href="#" class="menu_item">Menu</a>
+                <a href="#" class="accordion-title menu_item">Reservation</a>
+                <div class="accordion-content">
+                    <a href="#">Reservation 1</a>
+                    <a href="#">Reservation 2</a>
+                </div>
+                <a href="#" class="accordion-title menu_item">Recipe</a>
+                <div class="accordion-content">
+                    <a href="#">Deshi Foods</a>
+                    <a href="#">Indian Foods</a>
+                    <a href="#">Russian Foods</a>
+                    <a href="#">Italian Foods</a>
+                    <a href="#">Spicy Foods</a>
+                    <a href="#">Thi Foods</a>
+                </div>
+                <a href="#" class="menu_item">Blog</a>
+                <a href="#" class="menu_item">Shop</a>
+                <a href="#" class="menu_item">Contact</a>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <!--top header-->
+        <div class="top-haeder">
+            <div class="container-fluid container-xl">
+                <div class="top-header-wrapper d-flex align-items-center  justify-content-between ">
+                    <div class="top-header-left d-flex align-items-center">
+                        <div class="currency me-3">
+                            <a href="#"><span class="value_area">Currancy</span> <span class="ms-2"><i
+                                        class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                            <div class="option">
+                                <ul class="option-menu currency_option ps-0 mb-0">
+                                    <li class="list-unstyled"><a href="#">Euro (€)</a></li>
+                                    <li class="list-unstyled"><a href="#">Pound (£)</a></li>
+                                    <li class="list-unstyled"><a href="#">Us Doller ($)</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="language">
+                            <a href="#"><span class="ln_value">English </span><span class="ms-2"><i
+                                        class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                            <div class="option">
+                                <ul class="option-menu ln_option ps-0 mb-0">
+                                    <li class="list-unstyled"><a href="#">English</a></li>
+                                    <li class="list-unstyled"><a href="#">Italian</a></li>
+                                    <li class="list-unstyled"><a href="#">Spanish</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-header-right">
+                        <ul class="user_option mb-0 ps-0  d-flex align-items-center ">
+                            <li class="list-unstyled me-4"><a href="#">My Account</a></li>
+                            <li class="list-unstyled me-4"><a href="#">Wishlist (<span
+                                        class="wishlist_number">4</span>)</a></li>
+                            <li class="list-unstyled me-4"><a href="#">Shopping Cart</a></li>
+                            <li class="list-unstyled"><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container-fluid container-xl">
+                <div class="main-header-wrapper d-flex justify-content-between align-items-center ">
+                    <div class="header-right">
+                        <div class="logo">
+                            <a href="#" class="navbar-brand">
+                                <h3>El<span>Mart</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_left d-flex justify-content-between align-items-center ">
+                        <div class="search-bar">
+                            <form class="search-bar-form d-none d-md-block">
+                                <input type="text" name="search_text" id="search_text" placeholder="Search your goal"
+                                    required>
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <div class="search_icon d-grid d-md-none"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                        <div class="shopping_option">
+                            <ul class="ps-0 mb-0 d-flex ">
+                                <li class="list-unstyled">
+                                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                                </li>
+                                <li class="list-unstyled d-flex ">
+                                    <div class="shop_div me-3">
+                                        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        <div class="shooping_overview">
+                                            <div class="shopping_wrapper">
+                                                <span>Your shopping cart is empty!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shop_div2">
+                                        <a class="d-flex justify-content-between align-items-center " href="#">
+                                            <span class="user_amount">00.00</span>
+                                            <span class="ms-2">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <div class="container-fluid container-xl">
+                <div class="bottom_header_wrapper d-flex justify-content-between align-items-center ">
+                    <div class="mobile_menu d-flex d-lg-none">
+                        <button class="page_button" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span>All Pages</span>
+                        </button>
+                    </div>
+                    <ul id="desktop_menu" class="navbar-nav d-none d-lg-flex navbar-light menu-main">
+                        <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                        <li class="nav-item menu-item-has-children">
+                            <a href="#" class="nav-link">Reservation <i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4 ">
+                                <div class="list-item">
+                                    <h4 class="title">Food item 1</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a class="new_" href="product01.html" target="_blank">Product page-01</a>
+                                        </li>
+                                        <li><a class="new_" href="product.html" target="_blank">Product page-02</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 2</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 3</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebart</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 4</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 5</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No </a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Recipe</a></li>
+                        <li class="nav-item menu-item-has-children">
+                            <a href="#" class="nav-link">Blog<i class="fa fa-angle-down ms-2"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4 ">
+                                <div class="list-item">
+                                    <h4 class="title">Food item 1</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a class="new_" href="product01.html" target="_blank">Product page-01</a>
+                                        </li>
+                                        <li><a class="new_" href="product.html" target="_blank">Product page-02</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 2</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 3</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebart</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 4</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <h4 class="title">Food item 5</h4>
+                                    <ul class="ps-0 mt-3">
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Product List</a></li>
+                                        <li><a href="#">Sticky Gallery No </a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="button_side">
+                        <a href="#reservation_section"><span>Book A Table</span></a>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section style="background-color: bisque; height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <img class="img-fluid" style="width: 80%;" src="/comming_soon.png" alt="comming soon">
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <div class="row align-items-center ">
+                <div class="col-12 col-lg-6">
+                    <div class="newsletter_text">
+                        <h2>Welcome Treat First Order Offer</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form class="newsletter_form">
+                        <input type="search" id="search_input" placeholder="Enter Your Email">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="fire_effect">
+            <div class="fire1">
+                <img class="img-fluid" src="image/fire.png" alt="fire image">
+            </div>
+            <div class="fire1">
+                <img class="img-fluid" src="image/fire.png" alt="fire image">
+            </div>
+        </div>
+        <div class="container-fluid container-xl">
+            <div class="footer_wrapper">
+                <div class="footer_content">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                            <div class="footer_content1 ">
+                                <div class="logo">
+                                    <a href="#">
+                                        <h3>El<span>Mart</span></h3>
+                                    </a>
+                                </div>
+                                <p>Welcome to Foodizo, where passion meets plate symphony of flavors Nestled in the
+                                    heart beour restaurantant invites you on journey.</p>
+                                <div class="social_link d-flex gap-3 ">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                            <div class="footer_content">
+                                <h3>Our Company</h3>
+                                <div class="list_wrapper d-flex">
+                                    <ul class="ps-0">
+                                        <li class="list-unstyled"><a href="#">About us</a></li>
+                                        <li class="list-unstyled"><a href="#">Restaurant</a></li>
+                                        <li class="list-unstyled"><a href="#">Report a bug</a></li>
+                                        <li class="list-unstyled"><a href="#">FAQ</a></li>
+                                    </ul>
+                                    <ul class="ps-0">
+                                        <li class="list-unstyled"><a href="#">Blog</a></li>
+                                        <li class="list-unstyled"><a href="#">Reservation</a></li>
+                                        <li class="list-unstyled"><a href="#">Food Delivery</a></li>
+                                        <li class="list-unstyled"><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="footer_content">
+                                <h3>Opening Hours</h3>
+                                <table>
+                                    <tr>
+                                        <td>Mon - Tue</td>
+                                        <td>09.00 am - 10.00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wed - Thu</td>
+                                        <td>10.00am - 11.00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td>10.00am - 11.00pm</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <section class="copyright_section">
+        <div class="copyright_wrapper">
+            <div class="copyright_text">
+                <p>Copyright © <span>2024</span> All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- script -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.preloadinator.min.js"></script>
+    <script src="js/jquery-backToTop.min.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>
