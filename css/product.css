@@ -1181,10 +1181,10 @@ section#hero_section .side_option {
     justify-content: center;
 }
 
-.about_product .swiper-button-next2,
+.about_product .swiper-button-next2,.swiper-button-next5,
 .swiper-button-next,
 .swiper-button-prev,
-.about_product .swiper-button-prev2 {
+.about_product .swiper-button-prev2,.swiper-button-prev5{
     width: 40px !important;
     height: 40px !important;
     background: var(--main-color) !important;
@@ -1192,8 +1192,10 @@ section#hero_section .side_option {
 }
 
 .about_product .swiper-button-next2::after,
+.swiper-button-next5::after,
 .swiper-button-next::after,
 .swiper-button-prev::after,
+.swiper-button-prev5::after,
 .about_product .swiper-button-prev2::after {
     font-size: 18px !important;
     color: var(--third-color) !important;
@@ -1208,7 +1210,7 @@ section#hero_section .side_option {
     cursor: pointer;
 }
 
-.mySwiper3 .swiper-pagination-bullet {
+.mySwiper3 .swiper-pagination-bullet,.mySwiper4 .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     background: var(--main-color);
@@ -1452,6 +1454,187 @@ section#hero_section .side_option {
     transition: .6s;
     opacity: 1;
 }
+
+
+/* quick view style */
+.quick_view_popup {
+    width: 100%;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.quick_view_popup .popup_bg {
+    background: #000000b3;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.quick_view_wrapper .close_quick_view:hover {
+    background-color: var(--main-color);
+    color: var(--third-color);
+    transition: .6s;
+}
+.quick_view_wrapper .close_quick_view{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    color: var(--main-color);
+    background-color: var(--smoke-color);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .6s;
+}
+.quick_view_popup .quick_view_wrapper {
+    width: 720px;
+    background: var(--third-color);
+    z-index: 9;
+    padding: 20px;
+    height: 560px;
+    border-radius: 10px;
+    position: relative;
+}
+.quick_view_popup .quick_view_wrapper .right_side > a:hover {
+    text-decoration: underline !important;
+}
+.quick_view_popup .quick_view_wrapper .right_side > a{
+    font-size: 16px;
+    color: #666;
+}
+.quick_view_popup .quick_view_wrapper .right_side .p_title {
+    font-size: 25px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.about_product .swiper-button-next2,
+.swiper-button-next,
+.swiper-button-prev,
+.about_product .swiper-button-prev2 {
+    width: 40px !important;
+    height: 40px !important;
+    background: var(--main-color) !important;
+    border-radius: 50%;
+}
+
+.about_product .swiper-button-next2::after,
+.swiper-button-next::after,
+.swiper-button-prev::after,
+.about_product .swiper-button-prev2::after {
+    font-size: 18px !important;
+    color: var(--third-color) !important;
+    font-weight: 600;
+}
+
+.mySwiper4 .swiper-wrapper {
+    padding: 30px 0px;
+    padding-bottom: 50px;
+}
+
+.mySwiper3  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--main-color);
+}
+
+.mySwiper2 .img_area {
+    padding: 20px;
+}
+.quick_view_popup .quick_view_wrapper .right_side .quick_price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.quick_view_popup .quick_view_wrapper .right_side .rating_info {
+    padding: 10px 0px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+.quick_view_popup .quick_view_wrapper table.rating {
+    width: 100%;
+}
+
+.quick_view_popup .quick_view_wrapper table.rating tr td {
+    font-size: 16px;
+}
+
+.quick_view_popup .quick_view_wrapper table.rating tr td .rating_star {
+    color: #EFCA00;
+    font-size: 14px;
+}
+
+.quick_view_popup .quick_view_wrapper table.rating tr td {
+    padding: 5px 0px;
+}
+
+.quick_view_popup .quick_view_wrapper p.product_des {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6rem;
+    padding: 10px 0px;
+}
+
+.quick_view_popup .quick_view_wrapper .quantity h4 {
+    font-size: 20px;
+    color: #333;
+}
+.quick_view_popup .quick_view_wrapper .quantity .quantity_wrapper span {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background-color: #ededed;
+    color: #333;
+    cursor: pointer;
+}
+.quantity .quantity_wrapper input::-webkit-inner-spin-button,
+.quantity .quantity_wrapper input::-webkit-outer-spin-button{
+    appearance: none;
+}
+.quick_view_popup .quick_view_wrapper .quantity .quantity_wrapper input {
+    width: 50px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #ededed;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    padding: 5px
+}
+.quick_view_popup .quick_view_wrapper .add_btn a:hover {
+    background: var(--third-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: .6s;
+}
+.quick_view_popup .quick_view_wrapper .add_btn a {
+    display: grid;
+    height: 45px;
+    background: var(--main-color);
+    border: 1px solid transparent;
+    color: var(--third-color);
+    place-items: center;
+    margin-top: 15px;
+    transition: .6s;
+    border-radius: 10px;
+}
+
+.quick_view_popup .quick_view_wrapper .product_option_area ul li {
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+
+
 
 /* cart popup style */
 .cart_button input::-webkit-inner-spin-button,
@@ -1941,7 +2124,7 @@ h3.section_title {
     transition: .6s;
 }
 
-.product_slider .single_product .other_option a {
+.product_slider .single_product .other_option span {
     width: 40px;
     height: 40px;
     display: grid;
@@ -1952,6 +2135,7 @@ h3.section_title {
     font-size: 14px;
     font-weight: 600;
     transition: .6s;
+    cursor: pointer;
 }
 
 .single_product:hover .product_img img {
@@ -1959,7 +2143,7 @@ h3.section_title {
     transition: .6s;
 }
 
-.product_slider .single_product .other_option a:hover {
+.product_slider .single_product .other_option span:hover {
     background: var(--main-color);
     color: var(--third-color);
     transition: .6s;
@@ -2246,6 +2430,9 @@ footer {
     .mySwiper3 img {
         padding: 25px
     }
+        .quick_view_popup .quick_view_wrapper{
+            width: calc(100vw - 80px);
+        }
 }
 
 

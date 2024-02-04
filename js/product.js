@@ -141,6 +141,22 @@ cart_btn_area.forEach(area => {
   });
 });
 
+
+const quick_view_area = document.querySelector(".quick_view_popup")
+const quick_view_btn = document.querySelector(".close_quick_view")
+const quick_view_open = document.querySelectorAll(".quick_view_btn");
+quick_view_open.forEach(btn => {
+  btn.addEventListener("click", () => {
+    quick_view_area.style.display = "flex"
+  })
+})
+// const quick_view_btn = document.querySelector(".close_quick_view")
+quick_view_btn.addEventListener("click" , () => {
+  quick_view_area.style.display = "none"
+})
+
+
+
 //script for adding gallary
 var swiper = new Swiper(".mySwiper3", {
   spaceBetween: 1,
@@ -205,6 +221,46 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10
     }
 
+  }
+}
+);
+//script for adding gallary
+var swiper = new Swiper(".mySwiper4", {
+  spaceBetween: 1,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    380: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    668: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+
+  }
+})
+var swiper2 = new Swiper(".mySwiper5", {
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: ".swiper-button-next5",
+    prevEl: ".swiper-button-prev5",
+  },
+  thumbs: {
+    swiper: swiper,
   }
 }
 );

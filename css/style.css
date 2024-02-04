@@ -1522,6 +1522,7 @@ section.product_section {
     display: grid;
     place-items: center;
     transition: .6s;
+    cursor: pointer;
 }
 
 .single_product_slider .product_content .product_info .cart_btn span:hover {
