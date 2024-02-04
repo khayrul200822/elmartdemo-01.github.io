@@ -33,6 +33,96 @@
             </div>
         </div>
     </div>
+    <!-- add to cart popup -->
+    <div class="cart_popup">
+        <div class="cart_popup_bg"></div>
+        <div class="cart_wrapper">
+            <span class="cart_popup_close"><i class="fa-solid fa-x"></i></span>
+            <div class="message d-flex align-items-center">
+                <h3 class="me-5 mb-0">My Cart</h3>
+                <p class="mb-0 d-none d-sm-block"><span><i class="fa-solid fa-circle-check"></i></span>Product has been successfully
+                    added!</p>
+            </div>
+            <div class="cart_body">
+                <div class="single_cart_product d-flex gap-2  align-items-center">
+                    <div class="cart_left d-flex align-items-center ">
+                        <div class="cart_img">
+                            <img class="img-fluid" src="image/lunch-03.png" alt="cart_img">
+                        </div>
+                    </div>
+                    <div class="cart_right d-flex align-items-center justify-content-between ">
+                        <div class="cart_info">
+                            <h4 class="mb-0">Dehi Biriany With Salad</h4>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 ">
+                            <div class="cart_product_price">$45</div>
+                            <div class="cart_button">
+                                <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                                <input type="number" class="cart_value" value="1">
+                                <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                            </div>
+                            <div class="cart_product_remove">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cart_details d-flex ">
+                <div class="cupon_area">
+                    <h3>Coupon code</h3>
+                    <form class="cupon_form">
+                        <input type="text" name="cupon_code" id="coupon_code" placeholder="Coupon code">
+                        <button type="submit">Apply Coupon</button>
+                    </form>
+                </div>
+                <div class="cart_calculation">
+                    <h3>Cart Totals</h3>
+                    <table class="calculation_info">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$45</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td>$50</td>
+                        </tr>
+                    </table>
+                    <div class="calculation_btn">
+                        <a href="#">Keep Shopping</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_bottom">
+                <h3>You may be interested in...</h3>
+                <div class="related_product">
+                    <div class="single_r_product d-flex ">
+                        <div class="related_p_img">
+                            <img src="image/lunch-06.png" alt="related image">
+                        </div>
+                        <div class="related_product_info">
+                            <h4>Love Pizza Dishes</h4>
+                            <p class="mb-0 ">$35 - $50</p>
+                            <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="single_r_product d-flex ">
+                        <div class="related_p_img">
+                            <img src="image/lunch-05.png" alt="related image">
+                        </div>
+                        <div class="related_product_info">
+                            <h4>Thi Vegtable Salad</h4>
+                            <p class="mb-0 ">$35 - $50</p>
+                            <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- small screen search bar -->
     <div class="search_bar">
         <div class="container-fluid container-xl">
@@ -364,7 +454,7 @@
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                         <li><a href="#">Product List</a></li>
-                                        <li><a href="#" >Sticky Gallery No Sidebar</a></li>
+                                        <li><a href="#">Sticky Gallery No Sidebar</a></li>
                                         <li><a href="#" class="new_">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
                                         <li><a href="#">Product List</a></li>
@@ -615,7 +705,7 @@
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
-                                                <h3 class="food_title">Natural dry food</h3>
+                                                <h3 class="food_title"><a href="#">Natural dry food</a></h3>
                                                 <p class="food_price">$80.00</p>
                                             </div>
                                         </div>
@@ -631,7 +721,7 @@
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-regular fa-star-half-stroke"></i>
                                                 </div>
-                                                <h3 class="food_title">Thai Lettuce Wraps</h3>
+                                                <h3 class="food_title"><a href="#">Thai Lettuce Wraps</a></h3>
                                                 <p class="food_price">$55.00</p>
                                             </div>
                                         </div>
@@ -647,7 +737,7 @@
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
-                                                <h3 class="food_title">Chicken Salad</h3>
+                                                <h3 class="food_title"><a href="#">Chicken Salad</a></h3>
                                                 <p class="food_price">$55.00</p>
                                             </div>
                                         </div>
@@ -749,7 +839,8 @@
                                             <img class="img-fluid" src="image/breakfast-04.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -761,13 +852,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -777,7 +868,8 @@
                                             <img class="img-fluid" src="image/breakfast-06.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -789,13 +881,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -805,7 +897,8 @@
                                             <img class="img-fluid" src="image/lunch-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -817,13 +910,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -833,7 +926,8 @@
                                             <img class="img-fluid" src="image/dinner-03.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -845,13 +939,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -861,7 +955,8 @@
                                             <img class="img-fluid" src="image/lunch-03.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -873,13 +968,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -889,7 +984,8 @@
                                             <img class="img-fluid" src="image/dinner-07.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -901,13 +997,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -917,7 +1013,8 @@
                                             <img class="img-fluid" src="image/lunch-06.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -929,13 +1026,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -945,7 +1042,8 @@
                                             <img class="img-fluid" src="image/img-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -957,13 +1055,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -973,7 +1071,8 @@
                                             <img class="img-fluid" src="image/beverages-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -985,13 +1084,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1001,7 +1100,8 @@
                                             <img class="img-fluid" src="image/beverages-06.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1013,13 +1113,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1029,7 +1129,8 @@
                                             <img class="img-fluid" src="image/breakfast-05.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1041,13 +1142,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1057,7 +1158,8 @@
                                             <img class="img-fluid" src="image/lunch-03.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1069,13 +1171,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1085,7 +1187,8 @@
                                             <img class="img-fluid" src="image/lunch-02.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1097,13 +1200,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1113,7 +1216,8 @@
                                             <img class="img-fluid" src="image/dinner-04.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1125,13 +1229,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1141,7 +1245,8 @@
                                             <img class="img-fluid" src="image/dinner-01.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1153,13 +1258,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1169,7 +1274,8 @@
                                             <img class="img-fluid" src="image/breakfast-02.png" alt="product image">
                                         </div>
                                         <div class="product_overlay">
-                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines Sandrawich</a></h3>
+                                            <h3 class="product_title"><a href="product.html" target="_blank">Chines
+                                                    Sandrawich</a></h3>
                                             <div class="product_rating d-flex align-items-center gap-1">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -1181,13 +1287,13 @@
                                                 </p>
                                             </div>
                                             <div class="overlay_bottom">
-                                                <a href="#">Add</a>
-                                                <a href="#">
+                                                <span href="#" class="cart_btn">Add</span>
+                                                <span href="#" class="compare">
                                                     <i class="fa-solid fa-shuffle"></i>
-                                                </a>
-                                                <a href="#">
+                                                </span>
+                                                <span href="#" class="quick_view_btn">
                                                     <i class="fa-regular fa-eye"></i>
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>

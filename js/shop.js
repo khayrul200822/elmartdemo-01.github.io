@@ -199,7 +199,25 @@ const value_handler = (select_items, selcet_value) => {
 value_handler(item_value, item_value_field)
 value_handler(sort_value, sort_value_field)
 
+//add to cart count
+const increase_button = document.querySelectorAll(".increase");
+const decrease_button = document.querySelectorAll(".decrease");
+const cart_value_input = document.querySelectorAll(".cart_value");
 
+increase_button.forEach((btn , index) => {
+  btn.addEventListener("click", () => { 
+    let inputValue = parseInt(cart_value_input[index].value);
+    cart_value_input[index].value = inputValue+1;
+   
+  })
+})
+decrease_button.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    let input_value = parseInt(cart_value_input[index].value);
+    if(input_value > 1)
+    cart_value_input[index].value = input_value-1;
+  })
+})
 
 
 //for list view;
@@ -211,7 +229,7 @@ const price = document.querySelectorAll(".product_price");
 const title = document.querySelectorAll('.product_title');
 const rating_number = document.querySelectorAll(".product_rating > p");
 const rating = document.querySelectorAll(".product_rating");
-const overlay_down = document.querySelectorAll(".overlay_bottom a")
+const overlay_down = document.querySelectorAll(".overlay_bottom span")
 const grid_view2 = document.querySelector(".grid2_view");
 const grid_view3 = document.querySelector(".grid3_view")
 const grid_view4 = document.querySelector(".grid4_view")
@@ -308,6 +326,24 @@ grid_view5.addEventListener("click", () => {
   // grid2 view_remover
   product_tank.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr";
   product_tank.style.gap = "15px";
+})
+
+
+// cart popup handling
+const cart_close_btn = document.querySelector(".cart_popup_close");
+const cart_popup_area = document.querySelector(".cart_popup")
+const cart_btn = document.querySelectorAll(".cart_btn");
+cart_btn.forEach(btn => {
+  btn.addEventListener("click" , () => {
+    cart_popup_area.style.display = "flex";
+    cart_popup_area.style.opacity = "1";
+    document.body.style.overflow ="hidden";
+  })
+})
+cart_close_btn.addEventListener("click", () => {
+  cart_popup_area.style.display = "none";
+  cart_popup_area.style.opacity = "0";
+  document.body.style.overflow ="auto";
 })
 
 

@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
 
 //sticky header script
 $(document).ready(() => {
-  const heroSectionBottom = $(".archive-header").offset().top + $(".archive-header").outerHeight();
+  const heroSectionBottom = $(".product_top").offset().top + $(".product_top").outerHeight();
   $(window).on("scroll", () => {
     const scrollPosition = $(window).scrollTop();
 
@@ -86,3 +86,125 @@ $(".accordion-title").click(function () {
   $(this).toggleClass("open");
   $(this).next().slideToggle(300);
 });
+
+//add to cart count
+const increase_button = document.querySelectorAll(".increase");
+const decrease_button = document.querySelectorAll(".decrease");
+const cart_value_input = document.querySelectorAll(".cart_value");
+increase_button.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    let inputValue = parseInt(cart_value_input[index].value);
+    cart_value_input[index].value = inputValue + 1;
+
+  })
+})
+decrease_button.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    let input_value = parseInt(cart_value_input[index].value);
+    if (input_value > 1)
+      cart_value_input[index].value = input_value - 1;
+  })
+})
+
+// cart popup handling
+const cart_close_btn = document.querySelector(".cart_popup_close");
+const cart_popup_area = document.querySelector(".cart_popup")
+const cart_btn = document.querySelector(".cart_btn");
+cart_btn.addEventListener("click", () => {
+  cart_popup_area.style.display = "flex";
+  cart_popup_area.style.opacity = "1";
+  document.body.style.overflow = "hidden";
+})
+
+cart_close_btn.addEventListener("click", () => {
+  cart_popup_area.style.display = "none";
+  cart_popup_area.style.opacity = "0";
+  document.body.style.overflow = "auto";
+})
+
+const cart_btn_area = document.querySelectorAll(".cart_p_area");
+const cart_btn_visible = document.querySelectorAll(".cart_add_btn");
+
+cart_btn_area.forEach(area => {
+  area.addEventListener("mouseover", () => {
+    const index = Array.from(cart_btn_area).indexOf(area);
+    const targetBtn = cart_btn_visible[index];
+
+    targetBtn.style.animation = "text_anim .5s ease-in-out forwards alternate";
+  });
+
+  area.addEventListener("mouseleave", () => {
+    const index = Array.from(cart_btn_area).indexOf(area);
+    const targetBtn = cart_btn_visible[index];
+
+    targetBtn.style.animation = "text_anim_leave .5s ease-in-out forwards alternate";
+  });
+});
+
+//script for adding gallary
+var swiper = new Swiper(".mySwiper3", {
+  spaceBetween: 1,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination3",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    380: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    668: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+
+  }
+})
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  thumbs: {
+    swiper: swiper,
+  }
+}
+);
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    668: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    }
+
+  }
+}
+);
