@@ -2745,6 +2745,9 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    .quick_view_popup .quick_view_wrapper{
+        width: calc(100vw - 80px);
+    }
     .product_container_body {
         grid-template-columns: 1fr 1fr 1fr;
     }
