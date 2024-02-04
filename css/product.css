@@ -1181,7 +1181,9 @@ section#hero_section .side_option {
     justify-content: center;
 }
 
-.about_product .swiper-button-next2, .swiper-button-next,.swiper-button-prev,
+.about_product .swiper-button-next2,
+.swiper-button-next,
+.swiper-button-prev,
 .about_product .swiper-button-prev2 {
     width: 40px !important;
     height: 40px !important;
@@ -1192,10 +1194,10 @@ section#hero_section .side_option {
 .about_product .swiper-button-next2::after,
 .swiper-button-next::after,
 .swiper-button-prev::after,
-    .about_product .swiper-button-prev2::after {
+.about_product .swiper-button-prev2::after {
     font-size: 18px !important;
     color: var(--third-color) !important;
-    font-weight: 600 ;
+    font-weight: 600;
 }
 
 .swiper.mySwiper2 {
@@ -1847,35 +1849,40 @@ h3.section_title {
     transition: .6s;
     border: 1px solid transparent;
 }
+
 @keyframes text_anim_leave {
-    0%{
+    0% {
         bottom: 0;
         opacity: 1;
         visibility: visible;
         transition: .6s;
     }
-    100%{
-       
+
+    100% {
+
         bottom: -10px;
         opacity: 0;
         visibility: hidden;
         transition: .6s;
     }
 }
+
 @keyframes text_anim {
-    0%{
+    0% {
         bottom: -30px;
         opacity: 0;
         visibility: hidden;
         transition: .6s;
     }
-    100%{
+
+    100% {
         bottom: 0;
         opacity: 1;
         visibility: visible;
         transition: .6s;
     }
 }
+
 .single_product .product_img .cart_add_btn a:hover {
 
     background: var(--third-color);
@@ -1884,21 +1891,23 @@ h3.section_title {
     border: 1px solid var(--main-color);
 }
 
-.product_info .main_info > a {
+.product_info .main_info>a {
     font-size: 15px;
     color: #666;
     font-weight: 500;
     transition: .6s;
 }
 
-.product_info .main_info > a:hover {
+.product_info .main_info>a:hover {
     text-decoration: underline !important;
     transition: .6s;
 }
+
 .product_info .main_info h3 a:hover {
     color: var(--main-color);
     transition: .6s;
 }
+
 .product_info .main_info h3 a {
     font-size: 22px;
     color: #333;
@@ -1926,12 +1935,12 @@ h3.section_title {
     transition: .6s;
 }
 
-.product_slider .single_product:hover .other_option{
+.product_slider .single_product:hover .other_option {
     transform: translate(0%, 0%);
     opacity: 1;
-    transition: .6s
-    ;
+    transition: .6s;
 }
+
 .product_slider .single_product .other_option a {
     width: 40px;
     height: 40px;
@@ -1956,8 +1965,43 @@ h3.section_title {
     transition: .6s;
 }
 
+.single_highlight>h2 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 
+.h_product_container .single_h_product .h_product_img {
+    width: 80px;
+    height: 80px;
+}
 
+.h_product_container .single_h_product .h_product_img img {
+    width: 100%;
+}
+
+.h_product_container .single_h_product .h_product_info .h_title a:hover {
+    color: var(--main-color);
+    transition: .6s;
+}
+
+.h_product_container .single_h_product .h_product_info .h_title a {
+    font-size: 18px;
+    color: #333;
+    transition: .6s;
+}
+
+.h_product_container .single_h_product .h_product_info .h_price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0;
+}
+
+section.related_product {
+    margin-bottom: 50px;
+}
 
 /* footer style start */
 
@@ -1979,7 +2023,7 @@ footer {
     padding: 80px 0px;
     position: relative;
     padding-top: 120px;
-    margin-top: 250px;
+    margin-top: 210px;
 }
 
 .fire1 {
@@ -2228,9 +2272,10 @@ footer {
 }
 
 @media only screen and (max-width: 576px) {
-    .product_slider .single_product{
+    .product_slider .single_product {
         margin: 0px 70px;
     }
+
     .fire1 {
         width: calc(100vw - 135px);
     }
