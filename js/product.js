@@ -109,7 +109,7 @@ decrease_button.forEach((btn, index) => {
 // cart popup handling
 const cart_close_btn = document.querySelector(".cart_popup_close");
 const cart_popup_area = document.querySelector(".cart_popup")
-const cart_btn = document.querySelector(".cart_btn");
+const cart_btn = document.querySelectora(".cart_btn");
 cart_btn.addEventListener("click", () => {
   cart_popup_area.style.display = "flex";
   cart_popup_area.style.opacity = "1";
