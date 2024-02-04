@@ -1511,7 +1511,7 @@ section.product_section {
     color: var(--main-color);
 }
 
-.single_product_slider .product_content .product_info .cart_btn a {
+.single_product_slider .product_content .product_info .cart_btn span {
     font-size: 18px;
     color: var(--third-color);
     background: var(--main-color);
@@ -1524,7 +1524,7 @@ section.product_section {
     transition: .6s;
 }
 
-.single_product_slider .product_content .product_info .cart_btn a:hover {
+.single_product_slider .product_content .product_info .cart_btn span:hover {
     background: var(--third-color);
     color: var(--main-color);
     transition: .6s;
@@ -1636,7 +1636,7 @@ section.product_section {
     background: var(--main-color) !important;
 }
 
-.single_product_slider .product_content .product_info .cart_btn a:first-child {
+.single_product_slider .product_content .product_info .cart_btn span:first-child {
     background: var(--third-color);
     color: var(--main-color);
     border: 1px solid var(--main-color);
@@ -1644,7 +1644,7 @@ section.product_section {
     position: relative;
 }
 
-.single_product_slider .product_content .product_info .cart_btn a:first-child::after {
+.single_product_slider .product_content .product_info .cart_btn span:first-child::after {
     content: " ";
     width: 0%;
     position: absolute;
@@ -1655,19 +1655,19 @@ section.product_section {
     transition: .6s;
 }
 
-.single_product_slider .product_content .product_info .cart_btn a:first-child:hover svg {
+.single_product_slider .product_content .product_info .cart_btn span:first-child:hover svg {
     color: var(--third-color);
     transition: .6s;
     position: relative;
     z-index: 9;
 }
 
-.single_product_slider .product_content .product_info .cart_btn a:first-child:hover::after {
+.single_product_slider .product_content .product_info .cart_btn span:first-child:hover::after {
     width: 100%;
     transition: .6s;
 }
 
-.single_product_slider .product_content .product_info .cart_btn a:first-child:hover {
+.single_product_slider .product_content .product_info .cart_btn span:first-child:hover {
     background: var(--main-color);
     color: var(--third-color);
     transition: .6s;

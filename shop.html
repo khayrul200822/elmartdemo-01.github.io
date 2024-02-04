@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.pajinatify.css">
     <link rel="stylesheet" href="css/mega_menu.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/jquery-backToTop.min.css">
 </head>
 
@@ -33,6 +34,122 @@
             </div>
         </div>
     </div>
+    <!--product quick view-->
+    <div class="quick_view_popup">
+        <div class="popup_bg"></div>
+        <div class="quick_view_wrapper">
+            <span class="close_quick_view"><i class="fa-solid fa-x"></i></span>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="left_side">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <div class="img_area">
+                                        <img class="img-fluid " src="image/img-01.png" alt="slider product image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="img_area">
+                                        <img class="img-fluid " src="image/img-03.png" alt="slider product image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class=" img_area">
+                                        <img class="img-fluid " src="image/hero_img01.png" alt="slider product image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class=" img_area">
+                                        <img class="img-fluid " src="image/hero_img02.png" alt="slider product image" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class=" img_area">
+                                        <img class="img-fluid " src="image/img-17.png" alt="slider product image" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-next2 custom-color"></div>
+                            <div class="swiper-button-prev swiper-button-prev2 custom-color"></div>
+                        </div>
+                        <div class="swiper mySwiper3 thumbs-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid " src="image/img-01.png" alt="slider product image" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid " src="image/img-03.png" alt="slider product image" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid " src="image/hero_img01.png" alt="slider product image" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid " src="image/hero_img02.png" alt="slider product image" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid " src="image/img-17.png" alt="slider product image" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="right_side">
+                        <a href="#">Deshi Food</a>
+                        <h3 class="p_title">Italian Love Burger</h3>
+                        <p class="quick_price">$120</p>
+                        <div class="rating_info">
+                            <table class="rating">
+                                <tr>
+                                    <td>Rating:</td>
+                                    <td>
+                                        <div class="rating_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Availability:
+                                    </td>
+                                    <td>
+                                        <b>In Stock</b>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="product_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate
+                            dolor illum voluptas. Omnis molestias dolorum necessitatibus, ducimus magni.</p>
+                        <div class="product_option_area d-flex align-items-center gap-4">
+                            <div class="quantity">
+                                <h4>Quantity</h4>
+                                <div class="quantity_wrapper d-flex align-items-center ">
+                                    <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                                    <input type="number" class="cart_value" min="1" value="1">
+                                    <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                                </div>
+                            </div>
+                            <ul class="ps-0 mb-0">
+                                <li class="list-unstyled"><b>SKU</b> 23442</li>
+                                <li class="list-unstyled"><b>Tags:</b> Deshi Food</li>
+                            </ul>
+                        </div>
+                        <div class="add_btn mt-5">
+                            <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- add to cart popup -->
     <div class="cart_popup">
         <div class="cart_popup_bg"></div>
@@ -1415,6 +1532,7 @@
     <script src="js/jquery.pajinatify.js"></script>
     <script src="js/jquery.preloadinator.min.js"></script>
     <script src="js/jquery-backToTop.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/shop.js"></script>
 </body>
 
