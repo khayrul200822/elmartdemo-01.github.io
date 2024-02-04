@@ -960,7 +960,7 @@ section#hashTag_section {
     padding: 40px 0px;
 }
 
-.search_bar .search_bar_wrapper .search_bar_header h1 {
+.search_bar .search_bar_wrapper .search_bar_header h2 {
     text-align: center;
     font-size: 35px;
     color: var(--main-color);
@@ -1410,7 +1410,7 @@ section.product_section {
     background: var(--third-color);
 }
 
-.product_section_title h1 {
+.product_section_title h2 {
     font-size: 40px;
     font-weight: 700;
     color: #333;
@@ -1673,7 +1673,7 @@ section.product_section {
     transition: .6s;
 }
 
-.section_title h1 {
+.section_title h2 {
     font-size: 40px;
     font-weight: 700;
     color: #333;
@@ -2129,7 +2129,7 @@ section#reservation_section .reservation_wrapper {
     overflow: hidden;
 }
 
-.reservation_wrapper .section_title h1 {
+.reservation_wrapper .section_title h2 {
     color: var(--third-color);
 }
 
@@ -2370,7 +2370,7 @@ section.video_section p {
     color: var(--sub-color);
 }
 
-section.video_section h1 {
+section.video_section h2 {
     color: var(--third-color);
 }
 section.video_section .video_section_wrapper {
@@ -2400,17 +2400,11 @@ section.video_section .video_section_wrapper .tart_animation {
     cursor: pointer;
 }
     @keyframes animate{
-        0%{
-          box-shadow: 0 0 0 0 #e7272d5b;
+        0% {
+            box-shadow: 0 0 0 0 #e7272d88, 0 0 0 20px #e7272d57, 0 0 0 40px #e7272d48;
         }
-        40%{
-          box-shadow: 0 0 0 50px #e7272d27;
-        }
-        70%{
-          box-shadow: 0 0 0 50px #e7272d00;
-        }
-        100%{
-          box-shadow: 0 0 0 transparent;
+        100% {
+            box-shadow: 0 0 0 20px #e7272d3b, 0 0 0 40px #e7272d2c, 0 0 0 60px rgba(204,51,51,0);
         }
       }
 
@@ -2929,8 +2923,8 @@ footer{
         font-size: 20px;
     }
 
-    .product_section_title h1,
-    .section_title h1 {
+    .product_section_title h2,
+    .section_title h2 {
         font-size: 30px;
     }
 
@@ -2987,8 +2981,8 @@ footer{
         font-size: 30px;
     }
 
-    .product_section_title h1,
-    .section_title h1 {
+    .product_section_title h2,
+    .section_title h2 {
         font-size: 25px;
     }
 

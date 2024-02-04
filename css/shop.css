@@ -703,7 +703,7 @@ header.sticky_animation {
     padding: 40px 0px;
 }
 
-.search_bar .search_bar_wrapper .search_bar_header h1 {
+.search_bar .search_bar_wrapper .search_bar_header h2 {
     text-align: center;
     font-size: 35px;
     color: var(--main-color);
