@@ -939,7 +939,9 @@ section#hashTag_section {
     background-color: var(--sub-color);
     color: #333;
 }
-
+.mySwiper3 .swiper-slide {
+    cursor: pointer;
+}
 /*small screen searchBar Style*/
 .search_bar {
     background: var(--third-color);

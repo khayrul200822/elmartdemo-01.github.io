@@ -2052,7 +2052,9 @@ aside .filter_price .price_ragne .range_div input::-moz-range-thumb {
     height: 12px;
     background: var(--main-color);
 }
-
+.mySwiper3 .swiper-slide {
+    cursor: pointer;
+}
 .mySwiper2 .img_area {
     padding: 20px;
 }
