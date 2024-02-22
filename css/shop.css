@@ -2445,7 +2445,8 @@ aside .filter_price .price_ragne .range_div input::-moz-range-thumb {
     font-size: 15px;
 }
 
-.cart_bottom .related_product .single_r_product .related_product_info>a {
+.cart_bottom .related_product .single_r_product .related_product_info> button {
+    outline: none;
     padding: 10px 20px;
     background: var(--main-color);
     color: var(--third-color);
@@ -2457,7 +2458,11 @@ aside .filter_price .price_ragne .range_div input::-moz-range-thumb {
     transition: .6s;
     border: 1px solid transparent;
 }
-
+.cart_bottom .related_product .single_r_product .related_product_info> button:hover {
+    background: var(--three-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
 .cart_bottom .related_product .single_r_product .related_product_info>a:hover {
     background: var(--third-color);
     color: var(--main-color);

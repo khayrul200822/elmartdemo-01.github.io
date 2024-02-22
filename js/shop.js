@@ -36,8 +36,10 @@ const close_button = document.querySelector(".close_btn")
 //preloader
 const preloader_area = document.querySelector(".preloader")
 window.addEventListener("load", () => {
+  document.body.style.overflow = "hidden"
   setTimeout(() => {
     preloader_area.style.display = "none"
+    document.body.style.overflow = "auto"
   }, 2000)
   close_button.addEventListener("click", () => {
     cookies_area.style.animation = "cookies_close 2s ease-in-out  forwards alternate"
@@ -359,7 +361,7 @@ quick_view_open.forEach(btn => {
 // const quick_view_btn = document.querySelector(".close_quick_view")
 quick_view_btn.addEventListener("click" , () => {
   quick_view_area.style.display = "none"
-  document.body.style.overflow = "scroll"
+  document.body.style.overflow = "auto"
 })
 
 //script for pagination
