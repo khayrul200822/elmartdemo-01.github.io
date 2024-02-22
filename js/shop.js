@@ -352,11 +352,14 @@ const quick_view_open = document.querySelectorAll(".quick_view_btn");
 quick_view_open.forEach(btn => {
   btn.addEventListener("click", () => {
     quick_view_area.style.display = "flex"
+    document.body.style.overflow = "hidden"
+
   })
 })
 // const quick_view_btn = document.querySelector(".close_quick_view")
 quick_view_btn.addEventListener("click" , () => {
   quick_view_area.style.display = "none"
+  document.body.style.overflow = "scroll"
 })
 
 //script for pagination
