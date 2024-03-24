@@ -48,19 +48,18 @@ window.addEventListener("load", () => {
   })
 })
 
-//sticky header script
 $(document).ready(() => {
-  const heroSectionBottom = $(".product_top").offset().top + $(".product_top").outerHeight();
   $(window).on("scroll", () => {
-    const scrollPosition = $(window).scrollTop();
+      if ($(window).scrollTop()) {
+        $("#header").addClass("sticky_animation");
+      } else {
+        $("#header").removeClass("sticky_animation");
+      }
+  })
+})
 
-    if (scrollPosition >= (heroSectionBottom)) {
-      $("#header").addClass("sticky_animation");
-    } else {
-      $("#header").removeClass("sticky_animation");
-    }
-  });
-});
+
+
 
 //get elements
 const optionMenu = document.querySelectorAll(".currency_option li");
